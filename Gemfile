@@ -26,6 +26,7 @@ gem 'ember-rails'
 # gem 'emblem-rails' # Uncomment for Emblem awesomeness
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'qunit-rails'
 end
 
