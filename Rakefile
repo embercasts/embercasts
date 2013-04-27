@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-EmberRailsStarterKit::Application.load_tasks
+Embercasts::Application.load_tasks
