@@ -1,14 +1,15 @@
 @import "compass/reset"
 @import "susy"
 
-$total-columns: 12
+$total-columns: 4
 $column-width:  4em
 $gutter-width:  1em
 $grid-padding:  $gutter-width
-
+$tablet:        8
+$computer:      55em 12
 .page
   // page acts as a container for our grid.
-  @include container
+  @include container($total-columns, $tablet, $computer)
 
   // header and footer are full-width by default.
   header, footer
