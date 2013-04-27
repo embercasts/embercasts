@@ -1,1 +1,21 @@
-Hello World!
+<img src="/assets/logo.png" height=50>
+
+<div class="sidebar">
+
+</div>
+<div class="content">
+
+  <div class="row">
+    <div class="row-sidebar">
+
+    </div>
+
+    {{#each this}}
+      <div class="row-content">
+        <h3>{{title}}</h3>
+        <h4>{{subtitle}}</h4>
+        <iframe width="640" height="360" {{bindAttr src="videoURL"}} frameborder="0" allowfullscreen></iframe>
+      </div>
+    {{/each}}
+  </div>
+</div>
