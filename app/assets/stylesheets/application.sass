@@ -16,21 +16,27 @@ $computer:      55em 12
     clear: both
 
   nav
-    @include span-columns(2,12)
-
+    @include span-columns(4, 4)
   .content
-    @include span-columns(10 omega,12)
-
+    @include span-columns(4, 4)
     article
-      @include span-columns(10 omega, 10)
-
+      @include span-columns(4, 4)
       aside
-        @include span-columns(2, 11)
-        @include pull(1)
-
+        @include span-columns(4, 4)
       .row-content
-        @include span-columns(9 omega, 10)
-
+        @include span-columns(4, 4)
+  @include at-breakpoint($computer)
+    nav
+      @include span-columns(2,12)
+    .content
+      @include span-columns(10 omega, 12)
+      article
+        @include span-columns(10 omega, 10)
+        aside
+          @include span-columns(2, 11)
+          @include pull(1)
+        .row-content
+          @include span-columns(9 omega, 10)
 
 
 html, body
