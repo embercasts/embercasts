@@ -1,21 +1,26 @@
-<img src="/assets/logo.png" height=50>
+<header>
+  <img src="/assets/logo.png" height=50>
+</header>
 
 <div class="sidebar">
-
+  <ul>
+    <li>home</li>
+    <li>about</li>
+  </ul>
 </div>
+
 <div class="content">
 
-  <div class="row">
-    <div class="row-sidebar">
-
-    </div>
-
-    {{#each this}}
+  {{#each this}}
+    <div class="row">
+      <div class="row-sidebar">
+        <h4>{{date}}</h4>
+      </div>
       <div class="row-content">
         <h3>{{title}}</h3>
-        <h4>{{subtitle}}</h4>
-        <iframe width="640" height="360" {{bindAttr src="videoURL"}} frameborder="0" allowfullscreen></iframe>
+        <h6>{{subtitle}}</h6>
+        <video class="sublime" width="640" height="360" {{bindAttr id="videoId" data-uid="videoId" data-youtube-id="videoId"}} preload="none"></video>
       </div>
-    {{/each}}
-  </div>
+    </div>
+  {{/each}}
 </div>
