@@ -1,37 +1,56 @@
+@import "compass/reset"
+@import "susy"
+
+$total-columns: 12
+$column-width:  4em
+$gutter-width:  1em
+$grid-padding:  $gutter-width
+
+.page
+  // page acts as a container for our grid.
+  @include container
+
+  // header and footer are full-width by default.
+  header, footer
+    clear: both
+
+  nav
+    @include span-columns(2,12)
+
+  .content
+    @include span-columns(10 omega,12)
+
+    article
+      @include span-columns(10 omega, 10)
+
+      aside
+        @include span-columns(2, 11)
+        @include pull(1)
+
+      .row-content
+        @include span-columns(9 omega, 10)
+
+
+
 html, body
   font-family: Helvetica, sans-serif
+  font-size: 90%
 
-$header-height: 60px
+nav
+  margin: 1.2em 0
 
-header
-  height: $header-height
+  li
+    margin-bottom: 0.8em
 
-.sidebar
-  position: absolute
-  top: $header-height
-  left: 0
-  width: 150px
+article
+  margin-bottom: 1em
 
-.content
-  position: absolute
-  top: $header-height
-  left: 150px
-  right: 0
+aside
+  text-align: right
 
-.row
-  position: relative
-  height: 500px
+h2
+  font-weight: bold
+  margin: 1.2em 0
 
-.row-sidebar
-  position: absolute
-  top: 0
-  left: 0
-  width: 100px
-  height: 500px
-  
-.row-content
-  position: absolute
-  top: 0
-  left: 100px
-  right: 0
-  bottom: 0
+h3
+  margin: 1.2em 0

@@ -1,26 +1,27 @@
-<header>
-  <img src="/assets/logo.png" height=50>
-</header>
+<div class="page">
+  <header>
+    <img src="/assets/logo.png" height=50>
+  </header>
 
-<div class="sidebar">
-  <ul>
-    <li>home</li>
-    <li>about</li>
-  </ul>
-</div>
+  <nav>
+    <ul>
+      <li>home</li>
+      <li>about</li>
+    </ul>
+  </nav>
 
-<div class="content">
-
-  {{#each this}}
-    <div class="row">
-      <div class="row-sidebar">
-        <h4>{{date}}</h4>
-      </div>
-      <div class="row-content">
-        <h3>{{title}}</h3>
-        <h6>{{subtitle}}</h6>
-        <video class="sublime" width="640" height="360" {{bindAttr id="videoId" data-uid="videoId" data-youtube-id="videoId"}} preload="none"></video>
-      </div>
-    </div>
-  {{/each}}
+  <div class="content">
+    {{#each this}}
+      <article>
+        <aside>
+          <h2>{{date}}</h2>
+        </aside>
+        <div class="row-content">
+          <h2>{{title}}</h2>
+          <h3>{{subtitle}}</h3>
+          <video class="sublime" width="640" height="360" data-autoresize="fit" {{bindAttr id="videoId" data-uid="videoId" data-youtube-id="videoId"}} preload="none"></video>
+        </div>
+      </article>
+    {{/each}}
+  </div>
 </div>
