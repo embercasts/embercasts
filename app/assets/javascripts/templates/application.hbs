@@ -1,7 +1,17 @@
+<header>
+  <div class="logo">
+    {{#linkTo screencasts}}<img src="/assets/logo.png" height=50>{{/linkTo}}
+  </div>
+</header>
+
 <div class="page">
-  <header>
-    <img src="/assets/logo.png" height=50>
-  </header>
+
+  <nav class="side-bar">
+    <ul>
+      <li>home</li>
+      <li>about</li>
+    </ul>
+  </nav>
 
   <div class="content">
     {{#each this itemViewClass="App.ScreencastView"}}
@@ -18,11 +28,12 @@
     {{/each}}
   </div>
 
-  <nav>
+  <nav class="footer">
     <ul>
       <li>home</li>
       <li>about</li>
     </ul>
   </nav>
+
 
 </div>

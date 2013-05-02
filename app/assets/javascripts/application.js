@@ -10,3 +10,4 @@ App.ApplicationRoute = Ember.Route.extend({
     return App.Screencast.find();
   }
 });
+

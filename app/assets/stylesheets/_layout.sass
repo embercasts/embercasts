@@ -1,0 +1,81 @@
+@mixin breakpoint($point)
+  @if $point == computer
+    @media (max-width: $large-screen)
+      @content
+  @else if $point == tablet
+    @media (max-width: $medium-screen)
+      @content
+  @else if $point == phone
+    @media (max-width: $small-screen)
+      @content
+
+.page
+  @include grid-row
+  // page acts as a container for our grid.
+  // @include container($total-columns, $tablet, $computer)
+
+  // header and footer are full-width by default.
+  header, footer
+    clear: both
+
+  nav
+    @include grid-column(1)
+    @extend .hide-for-small
+  .content
+    @include grid-column(11)
+    article
+      @include grid-column(12)
+
+      aside
+        @include grid-column(2)
+      .row-content
+        @include grid-column(10)
+
+  @include breakpoint(phone)
+    nav
+      @include grid-column(12)
+    .content
+      @include grid-column(12)
+      article
+        @include grid-column(12)
+        aside
+          @include grid-column(12)
+        .row-content
+          @include grid-column(12)
+
+
+
+html, body
+  font-family: "Futura-Book", sans-serif
+  font-size: 90%
+
+header
+  @include grid-row
+  .logo
+    margin: 1em 0
+    @include grid-column(4, $last-column: true)
+nav
+  margin: 1.2em 0
+
+  li
+    margin-bottom: 0.8em
+
+article
+  margin-bottom: 1em
+
+aside
+  text-align: right
+
+h2
+  font-family: Futura
+  letter-spacing: 3px
+  font-size: 13px
+  text-transform: uppercase
+  margin: 1.2em 0
+
+h3
+  font-size: 14px
+  line-height: 20px
+  margin: 1.2em 0
+
+
