@@ -4,15 +4,15 @@
   </header>
 
   <div class="content">
-    {{#each this}}
+    {{#each this itemViewClass="App.ScreencastView"}}
       <article>
         <aside>
           <h2>{{date}}</h2>
         </aside>
         <div class="row-content">
           <h2>{{title}}</h2>
-          <h3>{{subtitle}}</h3>
-          <video class="sublime" width="640" height="360" data-autoresize="fit" {{bindAttr id="videoId" data-uid="videoId" data-youtube-id="videoId"}} preload="none"></video>
+          <video class="sublime" width="640" height="360" data-autoresize="fit" {{bindAttr id="youtube_id" data-uid="youtube_id" data-youtube-id="youtube_id"}} preload="none"></video>
+          <h3>{{description}}</h3>
         </div>
       </article>
     {{/each}}
