@@ -11,14 +11,11 @@
 
 .page
   @include grid-row
-  // page acts as a container for our grid.
-  // @include container($total-columns, $tablet, $computer)
 
-  // header and footer are full-width by default.
   header, footer
     clear: both
 
-  nav.side-bar
+  nav
     @include grid-column(1)
     @extend .hide-for-small
   .content
@@ -49,19 +46,7 @@ html, body
   font-family: "Futura-Book", sans-serif
   font-size: 90%
 
-header
-  @include grid-row
-  .logo
-    margin: 1em 0
-    @include grid-column(4, $last-column: true)
-  nav
-    @include grid-column(6)
-    @extend .show-for-small
-    ul
-      padding-top: 15px
-      li
-        float: left
-        padding-right: 20px
+
 nav
   margin: 1.2em 0
 

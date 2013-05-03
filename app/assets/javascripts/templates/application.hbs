@@ -1,23 +1,13 @@
 <header>
   <div class="logo">
-    {{#linkTo screencasts}}<img src="/assets/logo.png" height=50>{{/linkTo}}
+    {{#linkTo embercasts}}<img src="/assets/logo.png" height=50>{{/linkTo}}
   </div>
-  <nav>
-    <ul>
-      <li>home</li>
-      <li>about</li>
-    </ul>
-  </nav>
+  {{partial nav}}
 </header>
 
 <div class="page">
 
-  <nav class="side-bar">
-    <ul>
-      <li>home</li>
-      <li>about</li>
-    </ul>
-  </nav>
+  {{partial nav}}
 
   <div class="content">
     {{#each this itemViewClass="App.ScreencastView"}}
@@ -28,6 +18,7 @@
         <div class="row-content">
           <h2>{{title}}</h2>
           <video class="sublime" width="640" height="360" data-autoresize="fit" {{bindAttr id="youtube_id" data-uid="youtube_id" data-youtube-id="youtube_id"}} preload="none"></video>
+
           <h3>{{description}}</h3>
         </div>
       </article>

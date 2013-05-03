@@ -1,3 +1,3 @@
 App.Router.map(function() {
-  this.resource('screencasts',  {path:'/'});
+  this.resource('embercasts',  {path:'/'});
 });
