@@ -1,3 +1,5 @@
 App.Router.map(function() {
-  this.resource('embercasts',  {path:'/'});
+  this.resource('embercasts', function() {
+    this.route('embercast', {path:'/:embercast_id'});
+  });
 });

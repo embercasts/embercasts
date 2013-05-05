@@ -16,17 +16,14 @@
     clear: both
 
   nav
-    @include grid-column(1)
+    @include grid-column(3)
     @extend .hide-for-small
   .content
-    @include grid-column(11)
+    @include grid-column(9)
     article
       @include grid-column(12)
-
-      aside
-        @include grid-column(2)
       .row-content
-        @include grid-column(10)
+        @include grid-column(12)
 
   @include breakpoint(phone)
     nav
@@ -46,12 +43,12 @@ html, body
   font-family: "Futura-Book", sans-serif
   font-size: 90%
 
-
 nav
   margin: 1.2em 0
-
   li
-    margin-bottom: 0.8em
+    margin-bottom: 0.4em
+    color: $main-color
+    font-size: 15px
 
 article
   margin-bottom: 1em
@@ -61,14 +58,28 @@ aside
 
 h2
   font-family: Futura
-  letter-spacing: 3px
-  font-size: 13px
-  text-transform: uppercase
-  margin: 1.2em 0
+  font-size: 18px
+  margin: 1.2em 0 0.5em
 
 h3
   font-size: 14px
   line-height: 20px
   margin: 1.2em 0
+
+
+
+
+span.date, span.keywords
+  color: $main-gray
+  font-size: 13px
+  width: 90px
+  display: inline-block
+  font-weight: normal
+
+span.date
+  letter-spacing: 3px
+
+span.keywords
+  text-transform: uppercase
 
 

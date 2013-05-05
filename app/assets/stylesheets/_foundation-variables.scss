@@ -23,11 +23,17 @@ $em-base: 16px !default;
 
 //// Various global styles
 
+$main-color: #cd761f;
+$main-red: #9c161c;
+$main-gray: #b0b3b5;
+
 // $body-bg: #fff;
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
+
+
 
 //// Font-smoothing
 
@@ -39,7 +45,7 @@ $em-base: 16px !default;
 
 //// Colors
 
-// $primary-color: #2ba6cb;
+$primary-color: $main-color;
 // $secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;

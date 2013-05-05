@@ -1,6 +1,9 @@
 <nav>
   <ul>
-    <li>home</li>
-    <li>about</li>
+    {{#each this}}
+      <li>
+        {{#linkTo 'embercasts.embercast' this}}{{title}}{{/linkTo}}
+      </li>
+    {{/each}}
   </ul>
 </nav>
