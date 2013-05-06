@@ -10,6 +10,6 @@ article
         each keywords
           li = this
 
-      video.sublime width="640" height="360" data-autoresize="fit" id=youtube_id data-uid=youtube_id data-youtube-id=youtube_id preload="none"
+      video.sublime width="1000" height="600" data-autoresize="fit" id=youtube_id data-uid=youtube_id data-youtube-id=youtube_id preload="none"
 
-      h3 = description
+      p = description
