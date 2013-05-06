@@ -1,0 +1,8 @@
+/* Futura-Medium webfont (new-bulletproof) */ 
+@font-face {
+    font-family: 'Futura-Medium';
+    src: url('Futura-Medium.eot?#iefix') format('embedded-opentype'),
+         url('Futura-Medium.woff') format('woff'),
+         url('Futura-Medium.ttf')  format('truetype'),
+         url('Futura-Medium.svg#webfont') format('svg');
+}

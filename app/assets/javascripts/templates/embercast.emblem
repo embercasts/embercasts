@@ -11,7 +11,8 @@
     each keywords
       li = this
 
-video.sublime width="1000" height="600" data-autoresize="fit" id=youtube_id data-uid=youtube_id data-youtube-id=youtube_id preload="none"
+video width="1000" height="600" data-autoresize="fit" id=youtube_id data-uid=youtube_id data-youtube-id=youtube_id preload="none" controls="true"
+  source src=video_url
 
 .details
   ul.dotted-list

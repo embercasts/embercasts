@@ -1,0 +1,8 @@
+/* Futura-Book webfont (new-bulletproof) */ 
+@font-face {
+    font-family: 'Futura-Book';
+    src: url('Futura-Book.eot?#iefix') format('embedded-opentype'),
+         url('Futura-Book.woff') format('woff'),
+         url('Futura-Book.ttf')  format('truetype'),
+         url('Futura-Book.svg#webfont') format('svg');
+}
