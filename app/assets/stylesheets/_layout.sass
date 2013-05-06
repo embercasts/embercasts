@@ -78,12 +78,16 @@ ul.keywords
     float: left
     text-transform: lowercase
     font-weight: normal
+    color: darken($main-gray, 10%)
     &:after
       content: "\2022"
       color: $main-gray
       padding-left: 15px
       padding-right: 15px
       font-size: 10px
+      @include breakpoint(phone)
+        padding-left: 3px
+        padding-right: 3px
     &:last-of-type:after
       content: "\1"
     &.title
