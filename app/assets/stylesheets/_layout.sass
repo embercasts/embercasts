@@ -45,6 +45,9 @@ html, body
 
 nav
   margin: 1.2em 0
+  position: relative
+  .nav-fixed
+    position: fixed
   li
     margin-bottom: 0.4em
     color: $main-color
@@ -52,6 +55,8 @@ nav
 
 article
   margin-bottom: 1em
+  video
+    clear: both
 
 aside
   text-align: right
@@ -67,19 +72,40 @@ h3
   margin: 1.2em 0
 
 
+ul.keywords
+  padding-bottom: 30px
+  li
+    float: left
+    text-transform: lowercase
+    font-weight: normal
+    &:after
+      content: "\2022"
+      color: $main-gray
+      padding-left: 15px
+      padding-right: 15px
+      font-size: 10px
+    &:last-of-type:after
+      content: "\1"
+    &.title
+      text-transform: uppercase
+      color: $main-gray
+      font-size: 13px
+      width: 98px
+      font-weight: normal
+      padding-top: 3px
+      &:after
+        content: ""
 
-
-span.date, span.keywords
+span.date
   color: $main-gray
   font-size: 13px
   width: 90px
   display: inline-block
   font-weight: normal
-
-span.date
   letter-spacing: 3px
 
-span.keywords
-  text-transform: uppercase
+
+
+
 
 

@@ -12,7 +12,7 @@ App.Embercast = Ember.Model.extend({
 App.Embercast.adapter = Ember.Adapter.create({
   find: function(record, id) {
     var data = EMBERCAST_DATA.embercasts,
-        recordData = data.findProperty('id', id);
+        recordData = data.findProperty('id', youtube_id);
 
     record.load(id, recordData);
   },

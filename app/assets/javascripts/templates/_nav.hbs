@@ -1,9 +1,11 @@
 <nav>
-  <ul>
-    {{#each this}}
-      <li>
-        {{#linkTo 'embercasts.embercast' this}}{{title}}{{/linkTo}}
-      </li>
-    {{/each}}
-  </ul>
+  <div class="nav-fixed">
+    <ul>
+      {{#each this}}
+        <li>
+          {{#linkTo 'embercasts.embercast' this}}{{title}}{{/linkTo}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
 </nav>
