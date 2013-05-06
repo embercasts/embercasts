@@ -26,7 +26,7 @@ group :assets do
 end
 
 gem 'ember-rails'
-# gem 'emblem-rails' # Uncomment for Emblem awesomeness
+gem 'emblem-rails'
 
 group :development, :test do
   gem 'sqlite3'

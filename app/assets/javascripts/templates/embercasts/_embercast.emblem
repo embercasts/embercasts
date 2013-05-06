@@ -1,0 +1,15 @@
+article
+  .row-content
+    h2
+      span.date = date
+      linkTo 'embercasts.embercast' this
+        = title
+
+      h3: ul.keywords
+        li.title keywords
+        each keywords
+          li = this
+
+      video.sublime width="640" height="360" data-autoresize="fit" id=youtube_id data-uid=youtube_id data-youtube-id=youtube_id preload="none"
+
+      h3 = description
