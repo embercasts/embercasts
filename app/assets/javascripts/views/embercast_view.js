@@ -1,4 +1,6 @@
-App.EmbercastItemView = Ember.View.extend({
+App.EmbercastView = Ember.View.extend({
+  tagName: 'article',
+  templateName: 'embercast',
   didInsertElement: function() {
     sublime.load();
     if (sublime.prepare) { // wtf sublime video?!
