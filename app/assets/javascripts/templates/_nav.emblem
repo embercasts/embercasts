@@ -1,4 +1,4 @@
 nav: .nav-fixed
   ul: each this
-    li: linkTo 'embercasts.embercast' this
+    li: linkTo 'embercasts.show' this
       = title

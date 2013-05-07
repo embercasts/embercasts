@@ -1,2 +1,0 @@
-App.EmbercastItemView
-  = partial 'embercasts/embercast'
