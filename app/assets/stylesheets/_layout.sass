@@ -87,6 +87,8 @@ h3
   +grid-row($behavior: nest)
   .title
     +grid-column(2)
+    @media #{$portrait}
+      +grid-column(3)
     line-height: 1.6
     text-transform: uppercase
     color: $dark-gray
@@ -97,6 +99,8 @@ h3
 
   ul.keywords
     +grid-column(10)
+    @media #{$portrait}
+      +grid-column(9)
     padding-bottom: 20px
     +breakpoint(phone)
       padding-bottom: 10px
@@ -130,6 +134,8 @@ h3
   +grid-row($behavior: nest)
   .date
     +grid-column(2)
+    @media #{$portrait}
+      +grid-column(3)
     h2
       color: $dark-gray
       font-size: 13px
@@ -138,6 +144,8 @@ h3
       margin: 2.0em 0 0.5em
   .title
     +grid-column(10)
+    @media #{$portrait}
+      +grid-column(9)
     h2
       color: $dark-gray
 
