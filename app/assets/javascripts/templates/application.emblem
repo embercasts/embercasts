@@ -1,3 +1,1 @@
-header: .logo
-  linkTo 'embercasts.index': img src="/assets/logo.png" height=50
 = outlet

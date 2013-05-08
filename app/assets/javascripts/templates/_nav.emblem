@@ -1,4 +1,6 @@
 nav: .nav-fixed
+  header: .logo
+    linkTo 'embercasts.index': img src="/assets/logo.png"
   ul: each this
     li: linkTo 'embercasts.show' this
       = title
