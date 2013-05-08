@@ -10,30 +10,30 @@
       @content
 
 .page
-  @include grid-row
+  +grid-row
 
   header, footer
     clear: both
   header
     @extend .hide-for-medium-up
   nav
-    @include grid-column(3)
+    +grid-column(3)
     @extend .hide-for-small
   .content
-    @include grid-row($behavior: nest)
-    @include grid-column(9)
+    +grid-row($behavior: nest)
+    +grid-column(9)
     article
-      @include grid-column(12)
+      +grid-column(12)
 
-  @include breakpoint(phone)
+  +breakpoint(phone)
     nav
-      @include grid-column(12)
+      +grid-column(12)
     .content
-      @include grid-column(12)
+      +grid-column(12)
       article
-        @include grid-column(12)
+        +grid-column(12)
         aside
-          @include grid-column(12)
+          +grid-column(12)
 
 html, body
   font-family: Lato, sans-serif
@@ -71,7 +71,7 @@ h2
   font-family: Lato, sans-serif
   font-size: 18px
   margin: 1.2em 0 0.5em
-  @include breakpoint(phone)
+  +breakpoint(phone)
     margin-bottom: 0.3em
 
 
@@ -79,44 +79,66 @@ h3
   font-size: 14px
   line-height: 20px
   margin: 1.2em 0
-  @include breakpoint(phone)
+  +breakpoint(phone)
     margin: 0.3em 0
 
 
-ul.keywords
-  padding-bottom: 30px
-  @include breakpoint(phone)
-    padding-bottom: 10px
-  li
-    float: left
-    text-transform: lowercase
-    font-weight: normal
-    color: darken($main-gray, 10%)
+.keywords-list
+  +grid-row($behavior: nest)
+  .title
+    +grid-column(2)
+    line-height: 1.6
+    text-transform: uppercase
+    color: $dark-gray
+    font-size: 13px
+    font-weight: bold
     &:after
-      content: "\2022"
-      color: $main-gray
-      padding-left: 15px
-      padding-right: 15px
-      font-size: 10px
-      @include breakpoint(phone)
-        padding-left: 3px
-        padding-right: 3px
-    &:last-of-type:after
-      content: "\1"
-    &.title
-      text-transform: uppercase
-      color: $main-gray
-      font-size: 13px
-      width: 98px
-      font-weight: normal
-      padding-top: 3px
-      &:after
-        content: ""
+      content: ""
 
-span.date
-  color: $main-gray
-  font-size: 13px
-  width: 90px
-  display: inline-block
-  font-weight: normal
-  letter-spacing: 3px
+  ul.keywords
+    +grid-column(10)
+    padding-bottom: 20px
+    +breakpoint(phone)
+      padding-bottom: 10px
+    li
+      float: left
+      text-transform: lowercase
+      font-weight: normal
+      color: $dark-gray
+      &:after
+        content: "\2022"
+        color: $light-gray
+        padding-left: 15px
+        padding-right: 15px
+        font-size: 10px
+        +breakpoint(phone)
+          padding-left: 3px
+          padding-right: 3px
+      &:last-of-type:after
+        content: "\1"
+      &.title
+        text-transform: uppercase
+        color: $dark-gray
+        font-size: 13px
+        font-weight: bold
+        width: 98px
+        padding-top: 3px
+        &:after
+          content: ""
+
+.date-title
+  +grid-row($behavior: nest)
+  .date
+    +grid-column(2)
+    h2
+      color: $dark-gray
+      font-size: 13px
+      font-weight: bold
+      letter-spacing: 3px
+      margin: 2.0em 0 0.5em
+  .title
+    +grid-column(10)
+    h2
+      color: $dark-gray
+
+

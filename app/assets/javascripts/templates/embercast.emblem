@@ -1,12 +1,14 @@
-h2
-  span.date = date
-  linkTo 'embercasts.show' this
-    = title
+.date-title
+  .date
+    h2: = date
+  .title
+    h2: = title
 
-h3: ul.keywords
-  li.title keywords
-  each keywords
-    li = this
+.keywords-list
+  .title keywords
+  ul.keywords
+    each keywords
+      li = this
 
 video.sublime width="1000" height="600" data-autoresize="fit" id=youtube_id data-uid=youtube_id data-youtube-id=youtube_id preload="none"
 
