@@ -6,6 +6,7 @@ App.Embercast = Ember.Model.extend({
   description: attr(),
   youtube_id: attr(),
   date: attr(),
+  time: attr(),
   keywords: attr()
 });
 
@@ -31,6 +32,7 @@ var EMBERCAST_DATA = {
     "description" : "Erik talks about the evolution happening with web applications from server generated HTML to client-side MVC. He also talks about the philosophy behind Ember and some of the upcoming things that will make Ember even better from 1.0 and onward.",
     "title" : "Rise of the Clients",
     "date" : "27.03.13",
+    "time" : "5:45",
     "keywords" : ['views', 'run loop', 'bindings']
   }, {
     "id": '2',
@@ -38,6 +40,7 @@ var EMBERCAST_DATA = {
     "description" : "Ember JS integration testing is now built into ember. This introduction will give you all the information you need to get started.",
     "title" : "Ember JS Testing Made Easy and Fast",
     "date" : "24.04.13",
+    "time" : "10:45",
     "keywords" : ['views', 'run loop']
   } ]
 };

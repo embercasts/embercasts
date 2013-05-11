@@ -96,39 +96,44 @@ h3
     font-weight: bold
     &:after
       content: ""
-
-  ul.keywords
+  ul.dotted-list
     +grid-column(10)
     @media #{$portrait}
       +grid-column(9)
-    padding-bottom: 20px
-    +breakpoint(phone)
-      padding-bottom: 10px
-    li
-      float: left
-      text-transform: lowercase
-      font-weight: normal
+
+.details
+  padding-top: 15px
+
+ul.dotted-list
+  padding-bottom: 15px
+  +breakpoint(phone)
+    padding-bottom: 10px
+  li
+    float: left
+    text-transform: lowercase
+    font-weight: normal
+    color: $dark-gray
+    line-height: 1.6
+    &:after
+      content: "\2022"
+      color: $light-gray
+      padding-left: 15px
+      padding-right: 15px
+      font-size: 10px
+      +breakpoint(phone)
+        padding-left: 3px
+        padding-right: 3px
+    &:last-of-type:after
+      content: "\1"
+
+    span
+      text-transform: uppercase
       color: $dark-gray
-      &:after
-        content: "\2022"
-        color: $light-gray
-        padding-left: 15px
-        padding-right: 15px
-        font-size: 10px
-        +breakpoint(phone)
-          padding-left: 3px
-          padding-right: 3px
-      &:last-of-type:after
-        content: "\1"
-      &.title
-        text-transform: uppercase
-        color: $dark-gray
-        font-size: 13px
-        font-weight: bold
-        width: 98px
-        padding-top: 3px
-        &:after
-          content: ""
+      font-size: 110%
+      font-weight: bold
+      padding-right: 5px
+      line-height: 1
+
 
 .date-title
   +grid-row($behavior: nest)

@@ -6,10 +6,28 @@
 
 .keywords-list
   .title keywords
-  ul.keywords
+  ul.dotted-list
     each keywords
       li = this
 
 video.sublime width="1000" height="600" data-autoresize="fit" id=youtube_id data-uid=youtube_id data-youtube-id=youtube_id preload="none"
+
+.details
+  ul.dotted-list
+    li
+      = time
+    / li
+    /   span
+    /     | views
+    /   | 543
+    / li
+    /   span
+    /     | like
+    /   | 543
+    li
+      span
+        | share
+      | Twitter
+      |   Facebook
 
 p = description
