@@ -1,0 +1,10 @@
+@mixin breakpoint($point)
+  @if $point == computer
+    @media (max-width: $large-screen)
+      @content
+  @else if $point == tablet
+    @media (max-width: $medium-screen)
+      @content
+  @else if $point == phone
+    @media (max-width: $small-screen)
+      @content

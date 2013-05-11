@@ -1,0 +1,10 @@
+h1 Contact Embercast
+
+h3 You have an episode idea?
+p Let us know
+
+form
+  input placeholder="Name"
+  input placeholder="email"
+  input placeholder="Message" type='textarea'
+

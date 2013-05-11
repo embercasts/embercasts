@@ -4,3 +4,7 @@ nav: .nav-fixed
   ul: each this
     li: linkTo 'embercasts.show' this
       = title
+  .footer-nav
+    linkTo 'embercasts.about' | About
+    linkTo 'embercasts.contact' | Contact
+    a href="https://twitter.com/embercasts" target="_blank" Follow @embercasts
