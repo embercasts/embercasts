@@ -1,11 +1,12 @@
 .date-title
   .date
-    h2: = date
+    h3: = date
   .title
     h2: = title
 
 .keywords-list
-  .title keywords
+  .title
+    h3 keywords
   ul.dotted-list
     each keywords
       li = this
@@ -26,8 +27,9 @@ video.sublime width="1000" height="600" data-autoresize="fit" id=youtube_id data
     /   | 543
     li
       span
-        | share
+        a{action share} href="share" share
       | Twitter
       |   Facebook
 
-p = description
+.description
+  p = description

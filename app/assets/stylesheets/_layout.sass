@@ -1,3 +1,7 @@
+html, body
+  font-family: Lato, sans-serif
+  font-size: 100%
+
 .page
   +grid-row
 
@@ -12,74 +16,56 @@
     +grid-row($behavior: nest)
     +grid-column(9)
     article
-      +grid-column(12)
+      +grid-column(12, $collapse: true)
 
   +breakpoint(phone)
-    nav
-      +grid-column(12)
     .content
       +grid-column(12)
       article
-        +grid-column(12)
-        aside
-          +grid-column(12)
+        +grid-column(12, $collapse: true)
 
-html, body
-  font-family: Lato, sans-serif
-  font-size: 90%
 
-nav
-  margin: 1.2em 0
-  position: relative
-  .logo
-    width: 141px
-    height: 22px
-    background-repeat: no-repeat
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAAAWCAYAAAGK+C+zAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEM0ExQUNGM0FDOUMxMUUyQUM2Q0MwOUQxQUVCM0VGMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEM0ExQUNGNEFDOUMxMUUyQUM2Q0MwOUQxQUVCM0VGMCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQzQTFBQ0YxQUM5QzExRTJBQzZDQzA5RDFBRUIzRUYwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQzQTFBQ0YyQUM5QzExRTJBQzZDQzA5RDFBRUIzRUYwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+ob0U6AAAB45JREFUeNpiYMAC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)
-    margin-bottom: 10px
-  .nav-fixed
-    position: fixed
-    width: 22%
-    height: 100%
-  li
-    margin-bottom: 0.4em
-    color: $main-color
-    font-size: 15px
-.footer-nav
-  bottom: 20px
-  position: absolute
-  a
-    float: left
-    clear: both
-    padding-bottom: 5px
-    font-size: 15px
 
 article
   margin-bottom: 1em
   video
     clear: both
-  p
-    margin-top: 20px
-    line-height: 20px
-
-aside
-  text-align: right
 
 h2
   font-family: Lato, sans-serif
-  font-size: 18px
+  font-size: emCalc(18px)
   margin: 1.2em 0 0.5em
   +breakpoint(phone)
     margin-bottom: 0.3em
 
 
 h3
-  font-size: 14px
-  line-height: 20px
+  font-size: emCalc(12px)
+  line-height: emCalc(20px)
   margin: 1.2em 0
   +breakpoint(phone)
     margin: 0.3em 0
 
+.date-title
+  padding-top: emCalc(42px)
+  +grid-row($behavior: nest)
+  .date
+    +grid-column(2)
+    @media #{$portrait}
+      +grid-column(3)
+    h3
+      color: $dark-gray
+      font-size: emCalc(12px)
+      font-weight: 700
+      letter-spacing: 0.5em
+      margin: 2.3em 0 0.5em
+  .title
+    +grid-column(10)
+    @media #{$portrait}
+      +grid-column(9)
+    h2
+      color: $dark-gray
+      margin-bottom: 0.2em
 
 .keywords-list
   +grid-row($behavior: nest)
@@ -87,38 +73,36 @@ h3
     +grid-column(2)
     @media #{$portrait}
       +grid-column(3)
-    line-height: 1.6
-    text-transform: uppercase
-    color: $dark-gray
-    font-size: 13px
-    font-weight: bold
-    &:after
-      content: ""
+    h3
+      line-height: 2.8
+      text-transform: uppercase
+      color: $light-gray
+      font-size: emCalc(9px)
+      font-weight: 700
+      letter-spacing: 0.6em
+      margin-top: 0
   ul.dotted-list
     +grid-column(10)
     @media #{$portrait}
       +grid-column(9)
 
 .details
-  padding-top: 15px
+  float: left
+  padding-top: emCalc(15px)
+  ul.dotted-list
+    li
+      color: $light-gray
+      font-size: emCalc(12px)
+      text-transform: uppercase
 
-.date-title
+.description
   +grid-row($behavior: nest)
-  .date
-    +grid-column(2)
-    @media #{$portrait}
-      +grid-column(3)
-    h2
-      color: $dark-gray
-      font-size: 13px
-      font-weight: bold
-      letter-spacing: 3px
-      margin: 2.0em 0 0.5em
-  .title
-    +grid-column(10)
-    @media #{$portrait}
-      +grid-column(9)
-    h2
-      color: $dark-gray
+  +grid-column(12)
+  margin-top: emCalc(4px)
+  p
+    color: $dark-gray
+
+
+
 
 

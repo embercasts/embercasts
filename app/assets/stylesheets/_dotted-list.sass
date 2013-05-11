@@ -1,18 +1,15 @@
 ul.dotted-list
-  padding-bottom: 15px
-  +breakpoint(phone)
-    padding-bottom: 10px
   li
     float: left
     text-transform: lowercase
-    font-weight: normal
-    color: $dark-gray
+    font-size: 14px
+    color: $light-gray
     line-height: 1.6
     &:after
       content: "\2022"
       color: $light-gray
-      padding-left: 15px
-      padding-right: 15px
+      padding-left: 3px
+      padding-right: 3px
       font-size: 10px
       +breakpoint(phone)
         padding-left: 3px
@@ -22,8 +19,5 @@ ul.dotted-list
 
     span
       text-transform: uppercase
-      color: $dark-gray
-      font-size: 110%
-      font-weight: bold
+      color: $light-gray
       padding-right: 5px
-      line-height: 1

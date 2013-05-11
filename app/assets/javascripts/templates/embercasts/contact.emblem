@@ -8,5 +8,5 @@
     input placeholder="Name" type="text"
     input placeholder="Your Email Address" type="text"
     textarea value='message' placeholder="Your Message"
-    button.radius{submit} SEND IT
+    button.radius{action submit} SEND IT
 
