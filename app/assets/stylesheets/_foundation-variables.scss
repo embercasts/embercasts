@@ -53,7 +53,7 @@ $primary-color: #dd6f35;
 
 //// Make sure border radius matches unless we want it different.
 
-// $global-radius: 3px;
+$global-radius: 2px;
 // $global-rounded: 1000px;
 
 //// Inset shadow shiny edges and depressions.
@@ -322,13 +322,13 @@ $header-font-family: Lato, sans-serif;
 
 //// Button border styles.
 
-// $button-border-width: 1px;
-// $button-border-style: solid;
+$button-border-width: 0;
+$button-border-style: none;
 // $button-border-color: darken($primary-color, $button-function-factor);
 
 //// Radius used throughout the core.
 
-// $button-radius: $global-radius;
+$button-radius: $global-radius;
 
 //// Opacity for disabled buttons.
 

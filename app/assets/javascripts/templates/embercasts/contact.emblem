@@ -1,10 +1,12 @@
-h1 Contact Embercast
+.contact
+  h1 Contact Embercast
 
-h3 You have an episode idea?
-p Let us know
+  h3 You have an episode idea?
+  p Let us know
 
-form
-  input placeholder="Name"
-  input placeholder="email"
-  input placeholder="Message" type='textarea'
+  form
+    input placeholder="Name" type="text"
+    input placeholder="Your Email Address" type="text"
+    textarea value='message' placeholder="Your Message"
+    button.radius{submit} SEND IT
 
