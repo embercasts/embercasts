@@ -25,6 +25,7 @@ $em-base: 16px !default;
 
 $main-color: #cd761f;
 $main-red: #9c161c;
+$light-orange: #f4b092;
 $light-gray: #b4b4b4;
 $dark-gray: #747474;
 
@@ -132,11 +133,11 @@ $header-font-family: Lato, sans-serif;
 
 //// Heading font sizes
 
-// $h1-font-size: emCalc(44px);
-// $h2-font-size: emCalc(37px);
-// $h3-font-size: emCalc(27px);
-// $h4-font-size: emCalc(23px);
-// $h5-font-size: emCalc(18px);
+$h1-font-size: emCalc(22px);
+$h2-font-size: emCalc(18px);
+$h3-font-size: emCalc(16px);
+$h4-font-size: emCalc(14px);
+$h5-font-size: emCalc(14px);
 // $h6-font-size: 1em;
 
 //// Subheaders
@@ -253,7 +254,7 @@ $header-font-family: Lato, sans-serif;
 // $input-bg-color: #fff;
 // $input-focus-bg-color: darken(#fff, 2%);
 // $input-border-color: darken(#fff, 20%);
-// $input-focus-border-color: darken(#fff, 40%);
+$input-focus-border-color: darken(#fff, 40%);
 // $input-border-style: solid;
 // $input-border-width: 1px;
 // $input-disabled-bg: #ddd;

@@ -20,6 +20,7 @@ html, body
 
   +breakpoint(phone)
     .content
+      +grid-row
       +grid-column(12)
       article
         +grid-column(12, $collapse: true)
@@ -40,7 +41,6 @@ h2
 
 
 h3
-  font-size: emCalc(12px)
   line-height: emCalc(20px)
   margin: 1.2em 0
   +breakpoint(phone)
@@ -52,7 +52,7 @@ h3
   .date
     +grid-column(2)
     @media #{$portrait}
-      +grid-column(3)
+      +grid-column(4)
     h3
       color: $dark-gray
       font-size: emCalc(12px)
@@ -72,7 +72,7 @@ h3
   .title
     +grid-column(2)
     @media #{$portrait}
-      +grid-column(3)
+      +grid-column(4)
     h3
       line-height: 2.8
       text-transform: uppercase
