@@ -1,10 +1,10 @@
-div style="margin: 100px"
+.signup
   p: img src="/assets/logo.png"
 
   h1 Sign up for the Embercasts beta
 
   if flash
-    p style="padding: 4px; border: 1px solid green; color: green"= flash
+    p.flash = flash
 
   Ember.TextField type="email" placeholder="Email address" valueBinding=email action="signup"
   button click="signup" Signup
