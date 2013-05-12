@@ -1,7 +1,7 @@
 nav: .nav-fixed
   .logo
     linkTo 'index' | embercasts
-  ul: each this
+  ul: each embercasts
     li: linkTo 'embercast' this
       = title
   .footer-nav

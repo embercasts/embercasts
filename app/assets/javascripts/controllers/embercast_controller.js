@@ -1,4 +1,6 @@
 App.EmbercastController = Ember.ObjectController.extend({
+  needs: ['application'],
+  embercasts: Ember.computed.alias('controllers.application.content'),
   showLinks: false,
 
   share: function() {

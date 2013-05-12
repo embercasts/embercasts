@@ -1,4 +1,0 @@
-.page
-  header: .logo
-    linkTo 'index' | embercasts
-  .content = outlet
