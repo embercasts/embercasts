@@ -1,0 +1,6 @@
+p style="margin-top: 100px": img src="/assets/logo.png"
+
+h1 Sign up for the Embercasts beta
+
+input type="email" placeholder="Email address"
+button Signup

@@ -1,5 +1,4 @@
 .page
   header: .logo
     linkTo 'index' | embercasts
-  = partial nav
   .content = outlet

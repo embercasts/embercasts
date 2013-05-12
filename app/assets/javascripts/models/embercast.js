@@ -28,21 +28,35 @@ var EMBERCAST_DATA = {
   "embercasts" : [
     {
       "id" : 1,
-      // "youtube_id" : "Sc_O7ZWVSJ0",
       "video_url" : "https://googledrive.com/host/0BzsIltkR5Ng-QzV6NEYwX1djZzg/EmberCast%20draft%20-%20Ember%20Model%20(low).mp4",
       "description" : "",
       "title" : "Getting started with Ember Model",
-      "date" : "2013-05-06",
+      "date" : "05.12.2013",
       "keywords" : ['ember-model', 'beginner', 'models'],
       "time" : "XX:XX"
     }, {
       "id": 2,
-      // "youtube_id" : "nO1hxT9GBTs",
       "video_url" : "https://googledrive.com/host/0BzsIltkR5Ng-QzV6NEYwX1djZzg/EmblemDraft2_full.mp4",
       "description" : "",
       "title" : "Getting started with Emblem.js",
-      "date" : "2013-05-06",
+      "date" : "05.12.2013",
       "keywords" : ['templates', 'emblem.js', 'beginner'],
+      "time" : "XX:XX"
+    }, {
+      "id": 3,
+      "video_url" : "",
+      "description" : "",
+      "title" : "Building an autocomplete widget - part one",
+      "date" : "05.12.2013",
+      "keywords" : ['autocomplete', 'beginner'],
+      "time" : "XX:XX"
+    }, {
+      "id": 4,
+      "video_url" : "",
+      "description" : "",
+      "title" : "Client-side authentication",
+      "date" : "05.12.2013",
+      "keywords" : ['authentication', 'router', 'intermediate'],
       "time" : "XX:XX"
     }
   ]

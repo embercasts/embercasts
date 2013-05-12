@@ -11,7 +11,7 @@
     each keywords
       li = this
 
-video width="1000" height="600" data-autoresize="fit" id=youtube_id data-uid=youtube_id data-youtube-id=youtube_id preload="none" controls="true"
+video width="1000" height="600" preload="none" controls="true" poster="/assets/poster.png"
   source src=video_url
 
 .details
