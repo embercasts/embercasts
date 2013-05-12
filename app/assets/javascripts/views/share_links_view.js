@@ -19,6 +19,10 @@ App.ShareLinksView = Ember.View.extend({
   shareShow: function() {
     this.toggleProperty('showLinks');
     return this.get('controller').send('share');
+  },
+
+  share: function() {
+    alert('dave');
   }
 
 });

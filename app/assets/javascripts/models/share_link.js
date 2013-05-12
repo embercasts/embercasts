@@ -15,8 +15,8 @@ App.ShareLink = Ember.Model.extend({
 });
 
 App.ShareLink.reopenClass({
-
-  supportedTargets: ['twitter', 'facebook', 'google+', 'email'],
+  // will add 'google+', 'email' after launch
+  supportedTargets: ['twitter', 'facebook'],
 
   urlFor: function(target,link,title) {
     switch(target) {
