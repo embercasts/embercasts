@@ -1,10 +1,10 @@
 nav: .nav-fixed
   .logo
-    linkTo 'embercasts.index' | embercasts
+    linkTo 'index' | embercasts
   ul: each this
-    li: linkTo 'embercasts.show' this
+    li: linkTo 'embercast' this
       = title
   .footer-nav
-    linkTo 'embercasts.about' | About
-    linkTo 'embercasts.contact' | Contact
+    linkTo 'about' | About
+    linkTo 'contact' | Contact
     a href="https://twitter.com/embercasts" target="_blank" Follow @embercasts

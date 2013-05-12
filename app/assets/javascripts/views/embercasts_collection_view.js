@@ -23,7 +23,7 @@ App.EmbercastsCollectionView = Ember.CollectionView.extend(
       }
       self._debouncedScrollTimer = Ember.run.later(self, '_scrollChanged', 300);
     };
-    $window.scroll(self._scrollListener);
+    // $window.scroll(self._scrollListener);
 
     // Force a single fire.
     self._scrollListener();
@@ -68,7 +68,7 @@ App.EmbercastsCollectionView = Ember.CollectionView.extend(
   },
 
   willDestroyElement: function() {
-    Ember.$(window).unbind('scroll', this._scrollListener);
+    // Ember.$(window).unbind('scroll', this._scrollListener);
   },
 
   willDestroy: function() {

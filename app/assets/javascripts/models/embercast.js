@@ -4,7 +4,7 @@ App.Embercast = Ember.Model.extend({
   id: attr(),
   title: attr(),
   description: attr(),
-  youtube_id: attr(),
+  // youtube_id: attr(),
   video_url: attr(),
   date: attr(),
   time: attr(),
@@ -20,9 +20,7 @@ App.Embercast.adapter = Ember.Adapter.create({
   },
 
   findAll: function(klass, records) {
-    var data = EMBERCAST_DATA.embercasts;
-    // data.forEach(function(r) { r.id = r.youtube_id; }); // TODO: should really fix this in EM :P
-    records.load(klass, data);
+    records.load(klass, EMBERCAST_DATA.embercasts);
   }
 });
 

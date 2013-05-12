@@ -7,6 +7,3 @@
 //= require ember-model
 //= require app
 //= require_tree .
-
-App.ApplicationRoute = Ember.Route.extend();
-
