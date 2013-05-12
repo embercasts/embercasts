@@ -1,0 +1,6 @@
+span
+  a{action share contentBinding='this'} href="#" share
+
+span.links
+  each shareLinks
+    App.ShareLinkView

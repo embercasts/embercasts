@@ -62,7 +62,7 @@ h3
   .title
     +grid-column(10)
     @media #{$portrait}
-      +grid-column(9)
+      +grid-column(8)
     h2
       color: $dark-gray
       margin-bottom: 0.2em
@@ -84,16 +84,32 @@ h3
   ul.dotted-list
     +grid-column(10)
     @media #{$portrait}
-      +grid-column(9)
+      +grid-column(8)
 
 .details
   float: left
   padding-top: emCalc(15px)
   ul.dotted-list
     li
+      position: relative
       color: $light-gray
       font-size: emCalc(12px)
       text-transform: uppercase
+      &.show
+        .links
+          opacity: 1
+          left: 6px
+          position: relative
+      .links
+        opacity: 0
+        transition: all 0.25s ease-in-out
+        left: 0
+        position: relative
+        a
+          padding-right: 6px
+          color: $light-orange
+
+
 
 .description
   +grid-row($behavior: nest)
@@ -101,6 +117,8 @@ h3
   margin-top: emCalc(4px)
   p
     color: $dark-gray
+
+
 
 
 

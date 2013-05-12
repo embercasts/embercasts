@@ -25,11 +25,9 @@ video.sublime width="1000" height="600" data-autoresize="fit" id=youtube_id data
     /   span
     /     | like
     /   | 543
-    li
-      span
-        a{action share} href="share" share
-      | Twitter
-      |   Facebook
+
+    App.ShareLinksView
+
 
 .description
   p = description
