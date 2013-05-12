@@ -5,6 +5,8 @@ nav: .nav-fixed
     li: linkTo 'embercast' this
       = title
   .footer-nav
-    linkTo 'about' | About
-    linkTo 'contact' | Contact
+    / linkTo 'about' | About
+    / linkTo 'contact' | Contact
     a href="https://twitter.com/embercasts" target="_blank" Follow @embercasts
+
+h2.notice PLEASE NOTE: Screencasts are still drafts, fully edited versions coming with public launch on 5/13

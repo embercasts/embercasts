@@ -11,23 +11,23 @@
     each keywords
       li = this
 
-video width="1000" height="600" preload="none" controls="true" poster="/assets/poster.png"
+video width="1000" height="600" preload="none" controls="true" poster=poster
   source src=video_url
 
-.details
-  ul.dotted-list
-    li
-      = time
-    / li
-    /   span
-    /     | views
-    /   | 543
-    / li
-    /   span
-    /     | like
-    /   | 543
+/ .details
+/   ul.dotted-list
+/     li
+/       = time
+/     / li
+/     /   span
+/     /     | views
+/     /   | 543
+/     / li
+/     /   span
+/     /     | like
+/     /   | 543
 
-    App.ShareLinksView
+/     App.ShareLinksView
 
 
 .description

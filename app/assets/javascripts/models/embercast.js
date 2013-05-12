@@ -8,7 +8,15 @@ App.Embercast = Ember.Model.extend({
   video_url: attr(),
   date: attr(),
   time: attr(),
-  keywords: attr()
+  keywords: attr(),
+
+  poster: function() {
+    if (this.get('video_url')) {
+      return '/assets/poster.png';
+    } else {
+      return '/assets/poster-coming-soon.png';
+    }
+  }.property('video_url')
 });
 
 App.Embercast.adapter = Ember.Adapter.create({
@@ -44,7 +52,7 @@ var EMBERCAST_DATA = {
       "time" : "XX:XX"
     }, {
       "id": 3,
-      "video_url" : "",
+      "video_url" : "https://googledrive.com/host/0BzsIltkR5Ng-QzV6NEYwX1djZzg/Autocomplete%20first%20draft.mp4",
       "description" : "",
       "title" : "Building an autocomplete widget - part one",
       "date" : "05.12.2013",
