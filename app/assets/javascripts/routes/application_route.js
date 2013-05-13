@@ -3,11 +3,11 @@ App.ApplicationRoute = Ember.Route.extend({
     return App.Embercast.find();
   },
 
-  redirect: function() {
-    if (!localStorage.betaToken) {
-      this.transitionTo('signup');
-    }
-  },
+  // redirect: function() {
+  //   if (!localStorage.betaToken) {
+  //     this.transitionTo('signup');
+  //   }
+  // },
 
   events: {
     sharePopup: function(target, url) {
