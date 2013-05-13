@@ -1,13 +1,13 @@
 .date-title
-  .date
-    h3: = date
   .title
+    .date
+      h3: = date
     h2: = title
 
 .keywords-list
-  .title
-    h3 keywords
   ul.dotted-list
+    .title
+      h3 keywords
     each keywords
       li = this
 

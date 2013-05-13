@@ -28,7 +28,7 @@ html, body
 
 
 article
-  margin-bottom: 1em
+  margin: emCalc(42px) 0 1em
   video
     clear: both
     background: #333
@@ -47,11 +47,14 @@ h3
   +breakpoint(phone)
     margin: 0.3em 0
 
+$date-keyword-width: 140px
 .date-title
-  padding-top: emCalc(42px)
-  +grid-row($behavior: nest)
+  +grid-row
+  width: 100%
   .date
-    +grid-column(2)
+    width: $date-keyword-width
+    float: left
+    // +grid-column(2)
     @media #{$portrait}
       +grid-column(4)
     h3
@@ -61,17 +64,21 @@ h3
       letter-spacing: 0.5em
       margin: 2.3em 0 0.5em
   .title
-    +grid-column(10)
+    width: 100%
+    float: left
     @media #{$portrait}
       +grid-column(8)
     h2
       color: $dark-gray
-      margin-bottom: 0.2em
+      margin: 1.2em 0 0.2em 140px
 
 .keywords-list
-  +grid-row($behavior: nest)
+  +grid-row
+  width: 100%
+  position: relative
   .title
-    +grid-column(2)
+    width: $date-keyword-width
+    float: left
     @media #{$portrait}
       +grid-column(4)
     h3
@@ -83,7 +90,9 @@ h3
       letter-spacing: 0.6em
       margin-top: 0
   ul.dotted-list
-    +grid-column(10)
+    width: 100%
+    float: left
+    margin-bottom: 0
     @media #{$portrait}
       +grid-column(8)
 
