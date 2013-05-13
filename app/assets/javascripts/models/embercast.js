@@ -36,4 +36,3 @@ App.Embercast.adapter = Ember.Adapter.create({
 });
 
 var EMBERCAST_DATA = Ember.$.parseJSON(Ember.$('[type="text/x-embercasts"]').html());
-

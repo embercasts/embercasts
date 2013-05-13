@@ -1,6 +1,8 @@
 nav
   margin: 1.2em 0
   position: relative
+  overflow: visible
+  height: 400px
   .logo
     a
       width: 142px
@@ -14,6 +16,19 @@ nav
     width: 22%
     height: 100%
     margin-top: 40px
+    +breakpoint(phone)
+      transition: all 0.25s ease-in-out
+      .phone-show-nav &
+        width: 90%
+        background: $body-bg
+        border-right: 1px solid $light-gray
+        top: 0
+        left: 0
+        padding: 20px
+        margin-top: 0
+        position: fixed
+        overflow: auto
+
   li
     margin-bottom: 0.5em
     color: $main-color
@@ -25,6 +40,7 @@ nav
   #footer-nav
     bottom: 75px
     position: absolute
+    width: 100%
     a
       float: left
       clear: both
@@ -42,10 +58,11 @@ nav
         width: 34px
 
 #mailing-list-form
-  padding-right: 70px
   margin-bottom: 20px
   label
     display: block
     //font-weight: bold
     margin-bottom: 7px
     color: $main-color
+  input#mailing-list-email
+    max-width: emCalc(295px)
