@@ -36,7 +36,7 @@ var EMBERCAST_DATA = {
   "embercasts" : [
     {
       "id" : 1,
-      "video_url" : "https://googledrive.com/host/0BzsIltkR5Ng-QzV6NEYwX1djZzg/EmberCast%20draft%20-%20Ember%20Model%20(low).mp4",
+      "video_url" : "http://www.embercasts.com/video/ember-model-draft-high.mp4",
       "description" : "",
       "title" : "Getting started with Ember Model",
       "date" : "05.12.2013",
@@ -44,7 +44,7 @@ var EMBERCAST_DATA = {
       "time" : "XX:XX"
     }, {
       "id": 2,
-      "video_url" : "https://googledrive.com/host/0BzsIltkR5Ng-QzV6NEYwX1djZzg/EmblemDraft2_full.mp4",
+      "video_url" : "http://www.embercasts.com/video/emblem-final-high.mp4",
       "description" : "",
       "title" : "Getting started with Emblem.js",
       "date" : "05.12.2013",
@@ -52,7 +52,7 @@ var EMBERCAST_DATA = {
       "time" : "XX:XX"
     }, {
       "id": 3,
-      "video_url" : "https://googledrive.com/host/0BzsIltkR5Ng-QzV6NEYwX1djZzg/Autocomplete%20first%20draft.mp4",
+      "video_url" : "http://www.embercasts.com/video/autocomplete-draft-high.mp4",
       "description" : "",
       "title" : "Building an autocomplete widget - part one",
       "date" : "05.12.2013",
