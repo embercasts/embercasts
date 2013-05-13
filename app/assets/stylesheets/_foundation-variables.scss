@@ -84,9 +84,9 @@ $global-radius: 2px;
 
 //// Media Queries
 
-// $small-screen: emCalc(768px);
-// $medium-screen: emCalc(1280px);
-// $large-screen: emCalc(1440px);
+$small-screen: emCalc(767px);
+$medium-screen: emCalc(1280px);
+$large-screen: emCalc(1440px);
 
 // $screen: "only screen";
 // $small: "only screen and (min-width:"#{$small-screen}")";

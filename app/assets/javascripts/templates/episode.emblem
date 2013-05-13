@@ -5,11 +5,12 @@
     h2: = title
 
 .keywords-list
-  ul.dotted-list
+  .list
     .title
       h3 keywords
-    each keywords
-      li = this
+    ul.dotted-list
+      each keywords
+        li = this
 
 if youtube_id
   video.sublime id=youtube_id width="1000" height="600" data-autoresize="fit" data-uid=youtube_id data-youtube-id=youtube_id preload="none" poster=poster

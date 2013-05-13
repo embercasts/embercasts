@@ -47,7 +47,7 @@ h3
   +breakpoint(phone)
     margin: 0.3em 0
 
-$date-keyword-width: 140px
+$date-keyword-width: 110px
 .date-title
   +grid-row
   width: 100%
@@ -58,16 +58,14 @@ $date-keyword-width: 140px
       color: $dark-gray
       font-size: emCalc(12px)
       font-weight: 700
-      letter-spacing: 0.5em
+      letter-spacing: 0.3em
       margin: 2.3em 0 0.5em
   .title
     width: 100%
     float: left
-    @media #{$portrait}
-      +grid-column(8)
     h2
       color: $dark-gray
-      margin: 1.2em 0 0.2em 140px
+      margin: 1.2em 0 0.2em $date-keyword-width
 
 .keywords-list
   +grid-row
@@ -84,12 +82,13 @@ $date-keyword-width: 140px
       font-weight: 700
       letter-spacing: 0.6em
       margin-top: 0
-  ul.dotted-list
+  .list
     width: 100%
     float: left
-    margin-bottom: 0
-    @media #{$portrait}
-      +grid-column(8)
+    ul.dotted-list
+      margin-bottom: 0
+      margin-left: $date-keyword-width
+
 
 .details
   float: left

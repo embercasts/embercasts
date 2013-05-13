@@ -40,7 +40,7 @@ var EMBERCAST_DATA = {
       "youtube_id" : "FtcsS8GvRPQ",
       "description" : "",
       "title" : "Getting started with Ember Model",
-      "date" : "2013.05.12",
+      "date" : "12 MAY 13",
       "keywords" : ['ember-model', 'beginner', 'models'],
       "time" : "XX:XX"
     }, {
@@ -49,7 +49,7 @@ var EMBERCAST_DATA = {
       "youtube_id" : "h1M4zUXtrNk",
       "description" : "",
       "title" : "Getting started with Emblem.js",
-      "date" : "2013.05.12",
+      "date" : "12 MAY 13",
       "keywords" : ['templates', 'emblem.js', 'beginner'],
       "time" : "XX:XX"
     }, {
@@ -58,7 +58,7 @@ var EMBERCAST_DATA = {
       "youtube_id" : "Bkwh1bNwuQ8",
       "description" : "",
       "title" : "Building an autocomplete widget - part one",
-      "date" : "2013.05.12",
+      "date" : "12 MAY 13",
       "keywords" : ['autocomplete', 'beginner'],
       "time" : "XX:XX"
     }, {
@@ -66,7 +66,7 @@ var EMBERCAST_DATA = {
       "video_url" : "",
       "description" : "",
       "title" : "Client-side authentication",
-      "date" : "2013.05.12",
+      "date" : "12 MAY 13",
       "keywords" : ['authentication', 'router', 'intermediate'],
       "time" : "XX:XX"
     }
