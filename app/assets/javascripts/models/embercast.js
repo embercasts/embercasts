@@ -4,7 +4,7 @@ App.Embercast = Ember.Model.extend({
   id: attr(),
   title: attr(),
   description: attr(),
-  // youtube_id: attr(),
+  youtube_id: attr(),
   video_url: attr(),
   date: attr(),
   time: attr(),
@@ -37,6 +37,7 @@ var EMBERCAST_DATA = {
     {
       "id" : 1,
       "video_url" : "http://www.embercasts.com/video/ember-model-draft-high.mp4",
+      "youtube_id" : "FtcsS8GvRPQ",
       "description" : "",
       "title" : "Getting started with Ember Model",
       "date" : "05.12.2013",
@@ -45,6 +46,7 @@ var EMBERCAST_DATA = {
     }, {
       "id": 2,
       "video_url" : "http://www.embercasts.com/video/emblem-final-high.mp4",
+      "youtube_id" : "h1M4zUXtrNk",
       "description" : "",
       "title" : "Getting started with Emblem.js",
       "date" : "05.12.2013",
@@ -53,6 +55,7 @@ var EMBERCAST_DATA = {
     }, {
       "id": 3,
       "video_url" : "http://www.embercasts.com/video/autocomplete-draft-high.mp4",
+      "youtube_id" : "Bkwh1bNwuQ8",
       "description" : "",
       "title" : "Building an autocomplete widget - part one",
       "date" : "05.12.2013",
