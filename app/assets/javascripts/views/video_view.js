@@ -44,6 +44,15 @@ var attrs = {
     }
   },
 
+  willDestroyElement: function() {
+    var el = this.get('element');
+    var eventName;
+    for (var i = 0, l = events.length; i < l; i++) {
+      eventName = events[i];
+      el.removeEventListener(eventName, this[eventName].bind(this));
+    }
+  },
+
   formattedCurrentTime: function() {
     return formatTime(this.get('currentTime'));
   }.property('currentTime'),
