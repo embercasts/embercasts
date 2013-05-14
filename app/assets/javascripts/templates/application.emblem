@@ -2,5 +2,4 @@
   header: .logo
     linkTo 'index' | embercasts
   = partial nav
-  .content
-    App.EpisodeView
+  .content= outlet

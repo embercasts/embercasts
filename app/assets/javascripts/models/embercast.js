@@ -5,18 +5,19 @@ App.Embercast = Ember.Model.extend({
   title: attr(),
   description: attr(),
   youtube_id: attr(),
-  video_url: attr(),
+  mp4_url: attr(),
+  webm_url: attr(),
   date: attr(),
   time: attr(),
   keywords: attr(),
 
   poster: function() {
-    if (this.get('video_url')) {
+    if (this.get('mp4_url')) {
       return '/assets/poster.png';
     } else {
       return '/assets/poster-coming-soon.png';
     }
-  }.property('video_url')
+  }.property('mp4_url')
 });
 
 App.Embercast.adapter = Ember.Adapter.create({
@@ -36,7 +37,8 @@ var EMBERCAST_DATA = {
   "embercasts" : [
     {
       "id" : 1,
-      "video_url" : "http://www.embercasts.com/video/ember-model-draft-high.mp4",
+      "mp4_url" : "http://video1.embercasts.com/ember-model-draft-high.mp4",
+      "webm_url" : "http://video1.embercasts.com/ember-model-draft-high.webm",
       "youtube_id" : "FtcsS8GvRPQ",
       "description" : "",
       "title" : "Getting started with Ember Model",
@@ -45,7 +47,8 @@ var EMBERCAST_DATA = {
       "time" : "XX:XX"
     }, {
       "id": 2,
-      "video_url" : "http://www.embercasts.com/video/emblem-final-high.mp4",
+      "mp4_url" : "http://www.embercasts.com/video/emblem-final-high.mp4",
+      "webm_url" : "http://video1.embercasts.com/emblem-final-high.webm",
       "youtube_id" : "h1M4zUXtrNk",
       "description" : "",
       "title" : "Getting started with Emblem.js",
@@ -54,7 +57,8 @@ var EMBERCAST_DATA = {
       "time" : "XX:XX"
     }, {
       "id": 3,
-      "video_url" : "http://www.embercasts.com/video/autocomplete-draft-high.mp4",
+      "mp4_url" : "http://video1.embercasts.com/autocomplete-draft-high.mp4",
+      "webm_url" : "http://video1.embercasts.com/autocomplete-draft-high.webm",
       "youtube_id" : "Bkwh1bNwuQ8",
       "description" : "",
       "title" : "Building an autocomplete widget - part one",
@@ -63,7 +67,8 @@ var EMBERCAST_DATA = {
       "time" : "XX:XX"
     }, {
       "id": 4,
-      "video_url" : "",
+      "mp4_url" : "",
+      "webm_url" : "",
       "description" : "",
       "title" : "Client-side authentication",
       "date" : "12 MAY 13",

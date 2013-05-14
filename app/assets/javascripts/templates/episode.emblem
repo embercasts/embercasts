@@ -12,10 +12,12 @@
       each keywords
         li = this
 
-if youtube_id
-  video.sublime id=youtube_id width="1000" height="600" data-autoresize="fit" data-uid=youtube_id data-youtube-id=youtube_id preload="none" poster=poster
-else
-  video width="1000" height="600" preload="none" poster=poster
+video.sublime id=youtube_id width="1000" height="600" data-autoresize="fit" preload="none" poster=poster
+  if mp4_url
+    source src=mp4_url type="video/mp4"
+  if webm_url
+    source src=webm_url type="video/webm"
+
 / .details
 /   ul.dotted-list
 /     li

@@ -1,6 +1,4 @@
-App.EmbercastController = Ember.ObjectController.extend({
-  needs: ['application'],
-  embercasts: Ember.computed.alias('controllers.application.content'),
+App.EpisodeController = Ember.ObjectController.extend({
   showLinks: false,
 
   share: function() {

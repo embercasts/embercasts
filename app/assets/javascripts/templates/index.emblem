@@ -1,6 +1,1 @@
-.page
-  header: .logo
-    linkTo 'index' | embercasts
-  = partial nav
-  .content
-    each this itemController="embercast": App.EpisodeView
+each this itemController="episode": App.EpisodeView
