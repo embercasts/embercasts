@@ -47,7 +47,7 @@ var EMBERCAST_DATA = {
       "time" : "XX:XX"
     }, {
       "id": 2,
-      "mp4_url" : "http://www.embercasts.com/video/emblem-final-high.mp4",
+      "mp4_url" : "http://video1.embercasts.com/video/emblem-final-high.mp4",
       "webm_url" : "http://video1.embercasts.com/emblem-final-high.webm",
       "youtube_id" : "h1M4zUXtrNk",
       "description" : "",
@@ -70,7 +70,7 @@ var EMBERCAST_DATA = {
       "mp4_url" : "http://video1.embercasts.com/authentication-part1-high.mp4",
       "webm_url" : "http://video1.embercasts.com/authentication-part1-high.webm",
       "description" : "",
-      "title" : "Client-side authentication",
+      "title" : "Client-side authentication - part one",
       "date" : "12 MAY 13",
       "keywords" : ['authentication', 'router', 'intermediate'],
       "time" : "XX:XX"
