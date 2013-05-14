@@ -1,5 +1,5 @@
-// Version: v1.0.0-rc.3-204-ge2b30cb
-// Last commit: e2b30cb (2013-05-12 14:45:02 -0700)
+// Version: v1.0.0-rc.3-200-g65cb7fd
+// Last commit: 65cb7fd (2013-05-12 10:47:36 -0700)
 
 
 (function() {
@@ -151,8 +151,8 @@ Ember.deprecateFunc = function(message, func) {
 
 })();
 
-// Version: v1.0.0-rc.3-204-ge2b30cb
-// Last commit: e2b30cb (2013-05-12 14:45:02 -0700)
+// Version: v1.0.0-rc.3-200-g65cb7fd
+// Last commit: 65cb7fd (2013-05-12 10:47:36 -0700)
 
 
 (function() {
@@ -26165,14 +26165,6 @@ Ember.View.reopen({
   },
 
   connectOutlet: function(outletName, view) {
-    if (this._pendingDisconnections) {
-      delete this._pendingDisconnections[outletName];
-    }
-
-    if (this._hasEquivalentView(outletName, view)) {
-      return;
-    }
-
     var outlets = get(this, '_outlets'),
         container = get(this, 'container'),
         router = container && container.lookup('router:main'),
@@ -26185,30 +26177,10 @@ Ember.View.reopen({
     }
   },
 
-  _hasEquivalentView: function(outletName, view) {
-    var existingView = get(this, '_outlets.'+outletName);
-    return existingView &&
-      existingView.prototype === view.prototype &&
-      existingView.get('template') === view.get('template') &&
-      existingView.get('context') === view.get('context');
-  },
-
   disconnectOutlet: function(outletName) {
-    if (!this._pendingDisconnections) {
-      this._pendingDisconnections = {};
-    }
-    this._pendingDisconnections[outletName] = true;
-    Ember.run.once(this, '_finishDisconnections');
-  },
-
-  _finishDisconnections: function() {
     var outlets = get(this, '_outlets');
-    var pendingDisconnections = this._pendingDisconnections;
-    this._pendingDisconnections = null;
 
-    for (var outletName in pendingDisconnections) {
-      set(outlets, outletName, null);
-    }
+    set(outlets, outletName, null);
   }
 });
 
@@ -29332,8 +29304,8 @@ helper('wait', wait);
 
 
 })();
-// Version: v1.0.0-rc.3-204-ge2b30cb
-// Last commit: e2b30cb (2013-05-12 14:45:02 -0700)
+// Version: v1.0.0-rc.3-200-g65cb7fd
+// Last commit: 65cb7fd (2013-05-12 10:47:36 -0700)
 
 
 (function() {
