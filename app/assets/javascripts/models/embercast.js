@@ -67,8 +67,8 @@ var EMBERCAST_DATA = {
       "time" : "XX:XX"
     }, {
       "id": 4,
-      "mp4_url" : "",
-      "webm_url" : "",
+      "mp4_url" : "http://video1.embercasts.com/authentication-part1-high.mp4",
+      "webm_url" : "http://video1.embercasts.com/authentication-part1-high.webm",
       "description" : "",
       "title" : "Client-side authentication",
       "date" : "12 MAY 13",
