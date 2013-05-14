@@ -61,6 +61,18 @@ var attrs = {
     return formatTime(this.get('duration'));
   }.property('duration'),
 
+  analyticsData: function() {
+    var data = this.getProperties('currentTime', 'duration', 'volume');
+    data.videoId = this.get('context.id');
+    return data;
+  },
+
+  report: function(eventName) {
+    var analyticsController = this.get('controller.analyticsController');
+    if (!analyticsController) { throw new Error('analyticsController not found!'); }
+    analyticsController.report(eventName, this.analyticsData());
+  },
+
   // events
 
   loadstart: Ember.K,
@@ -78,11 +90,13 @@ var attrs = {
 
   playing: function(e) {
     this.set('isPlaying', true);
+    this.report('playing');
     console.log('isPlaying', this.get('formattedCurrentTime'), this.get('formattedDuration'));
   },
 
   pause: function(e) {
     this.set('isPlaying', false);
+    this.report('pause');
     console.log('isPaused', this.get('formattedCurrentTime'), this.get('formattedDuration'));
   },
 
@@ -98,6 +112,8 @@ var attrs = {
 
   suspend: function(e) {
     this.set('isLoaded', true);
+    // TODO: track download time
+
     // var buffered = e.target.buffered;
     // console.log('suspend', buffered.length && buffered.start(0), buffered.length && buffered.end(0));
   },
@@ -107,12 +123,14 @@ var attrs = {
     this.set('volume',  e.target.volume);
   },
 
+  // iOS doesn't send seek events
   seeking: function(e) {
-    console.log('seeking', this.get('formattedCurrentTime'), this.get('formattedDuration'), formatTime(e.target.currentTime));
+    // console.log('seeking', this.get('formattedCurrentTime'), this.get('formattedDuration'), formatTime(e.target.currentTime));
   },
 
   seeked: function(e) {
-    console.log('seeked', this.get('formattedCurrentTime'), this.get('formattedDuration'));
+    this.report('seeked');
+    // console.log('seeked', this.get('formattedCurrentTime'), this.get('formattedDuration'));
   }
 };
 
