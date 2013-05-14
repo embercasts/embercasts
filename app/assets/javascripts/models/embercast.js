@@ -47,7 +47,7 @@ var EMBERCAST_DATA = {
       "time" : "XX:XX"
     }, {
       "id": 2,
-      "mp4_url" : "http://video1.embercasts.com/video/emblem-final-high.mp4",
+      "mp4_url" : "http://video1.embercasts.com/emblem-final-high.mp4",
       "webm_url" : "http://video1.embercasts.com/emblem-final-high.webm",
       "youtube_id" : "h1M4zUXtrNk",
       "description" : "",
