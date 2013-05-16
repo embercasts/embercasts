@@ -17,6 +17,7 @@ App.VideoView
 .details
   ul.dotted-list
     li = time
+    li: a href=source_url target="_blank" Source Code
 
 .description
   p = markdown description

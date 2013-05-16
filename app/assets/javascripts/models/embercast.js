@@ -7,6 +7,7 @@ App.Embercast = Ember.Model.extend({
   youtube_id: attr(),
   mp4_url: attr(),
   webm_url: attr(),
+  source_url: attr(),
   date: attr(),
   time: attr(),
   keywords: attr(),
@@ -39,8 +40,9 @@ var EMBERCAST_DATA = [
     "mp4_url" : "http://video1.embercasts.com/ember-model-final.mp4",
     "webm_url" : "http://video1.embercasts.com/ember-model-final.webm",
     "youtube_id" : "FtcsS8GvRPQ",
-    "description" : "",
+    "description" : "In this Embercast we cover getting started with Ember Model and the Ember starter kit.",
     "title" : "Getting started with Ember Model",
+    "source_url" : "https://github.com/embercasts/getting-started-with-ember-model",
     "date" : "12 MAY 13",
     "keywords" : ['ember-model', 'beginner', 'models'],
     "time" : "5:08"
@@ -59,8 +61,9 @@ var EMBERCAST_DATA = [
     "mp4_url" : "http://video1.embercasts.com/autocomplete-draft-high.mp4",
     "webm_url" : "http://video1.embercasts.com/autocomplete-draft-high.webm",
     "youtube_id" : "Bkwh1bNwuQ8",
-    "description" : "",
+    "description" : "In the first part of this series, we show how easy it is to build the foundations of an autocomplete widget with Ember.js.",
     "title" : "Building an autocomplete widget - part one",
+    "source_url" : "https://github.com/embercasts/building-an-autocomplete-widget",
     "date" : "12 MAY 13",
     "keywords" : ['autocomplete', 'beginner'],
     "time" : "5:20"
@@ -70,6 +73,7 @@ var EMBERCAST_DATA = [
     "webm_url" : "http://video1.embercasts.com/authentication-part1-high.webm",
     "description" : "This two-part series on client-side authentication focuses on how you can configure your single-page Ember app to query data from the server using token-based authentication. This first part focuses on basic app setup/organization, and how to build a username / password form to retrieve the token from the server.\n\nPart 2 will demonstrate how to use this token to perform queries in conjunction with Ember Model, as well as how to hack into the Ember Router to make it possible to recall and retry previously attempted transitions.",
     "title" : "Client-side Authentication, Part One",
+    "source_url" : "https://github.com/embercasts/authentication-part-1",
     "date" : "12 MAY 13",
     "keywords" : ['authentication', 'router', 'intermediate'],
     "time" : "7:54"
