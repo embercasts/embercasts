@@ -53,6 +53,11 @@ var attrs = {
     }
   },
 
+  // workaround for https://github.com/emberjs/ember.js/issues/2666
+  _controllerContentDidChange: function() {
+    this.rerender();
+  }.observes('controller.content'),
+
   formattedCurrentTime: function() {
     return formatTime(this.get('currentTime'));
   }.property('currentTime'),
