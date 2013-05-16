@@ -2,7 +2,9 @@
   .title
     .date
       h3: = date
-    h2: = title
+    h2
+      linkTo 'episode' this
+        = title
 
 .keywords-list
   .list
