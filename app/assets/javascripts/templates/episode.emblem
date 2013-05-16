@@ -14,21 +14,9 @@
 
 App.VideoView
 
-/ .details
-/   ul.dotted-list
-/     li
-/       = time
-/     / li
-/     /   span
-/     /     | views
-/     /   | 543
-/     / li
-/     /   span
-/     /     | like
-/     /   | 543
-
-/     App.ShareLinksView
-
+.details
+  ul.dotted-list
+    li = time
 
 .description
-  p = description
+  p = markdown description
