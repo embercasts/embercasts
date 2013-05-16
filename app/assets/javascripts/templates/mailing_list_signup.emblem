@@ -1,0 +1,10 @@
+form#mailing-list-form submit="signup" class={ :row hasSignedUp }
+  label for="mailing-list-email" 
+    if hasSignedUp
+      | thanks for signing up!
+    else
+      if submitting
+        | sending...
+      else
+        | join our mailing list
+  = input value=email id="mailing-list-email" type=email placeholder="email address" disabled=submitting
