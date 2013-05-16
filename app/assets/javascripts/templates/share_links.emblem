@@ -1,6 +1,0 @@
-span
-  a href="#" share
-
-span.links
-  each shareLinks
-    App.ShareLinkView
