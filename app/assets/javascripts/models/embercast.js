@@ -37,8 +37,8 @@ var EMBERCAST_DATA = {
   "embercasts" : [
     {
       "id" : 1,
-      "mp4_url" : "http://video1.embercasts.com/ember-model-draft-high.mp4",
-      "webm_url" : "http://video1.embercasts.com/ember-model-draft-high.webm",
+      "mp4_url" : "http://video1.embercasts.com/ember-model-final.mp4",
+      "webm_url" : "http://video1.embercasts.com/ember-model-final.webm",
       "youtube_id" : "FtcsS8GvRPQ",
       "description" : "",
       "title" : "Getting started with Ember Model",
