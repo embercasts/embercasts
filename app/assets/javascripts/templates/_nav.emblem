@@ -7,4 +7,4 @@ nav: .nav-fixed
   .footer-nav
     linkTo 'about' | About
     a href="#" onclick="BAROMETER.show(); return false;" Feedback/Contact
-    a href="https://twitter.com/embercasts" target="_blank" Follow @embercasts
+    iframe allowtransparency="true" frameborder="0" scrolling="no" src="//platform.twitter.com/widgets/follow_button.html?screen_name=embercasts&show_count=false" style="width:300px; height:20px;"
