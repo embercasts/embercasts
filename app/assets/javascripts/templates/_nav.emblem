@@ -6,5 +6,5 @@ nav: .nav-fixed
       = title
   .footer-nav
     linkTo 'about' | About
-    linkTo 'contact' | Contact
+    a href="#" onclick="BAROMETER.show(); return false;" Feedback/Contact
     a href="https://twitter.com/embercasts" target="_blank" Follow @embercasts
