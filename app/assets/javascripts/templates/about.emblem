@@ -1,6 +1,6 @@
 .about
   .row
-    h1 About Embercasts
+    h2 About Embercasts
   .row.caster-bio
     .large-3.columns
       img src="/assets/ebryn.jpeg"
