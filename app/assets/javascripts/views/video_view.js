@@ -83,7 +83,6 @@ App.VideoView = Ember.View.extend({
   canplaythrough: Ember.K,
   abort: Ember.K,
   emptied: Ember.K,
-  ended: Ember.K,
   error: Ember.K,
   mozaudioavailable: Ember.K,
   ratechange: Ember.K,
@@ -136,5 +135,9 @@ App.VideoView = Ember.View.extend({
   seeked: function(e) {
     this.report('seeked');
     // console.log('seeked', this.get('formattedCurrentTime'), this.get('formattedDuration'));
+  },
+
+  ended: function(e) {
+    this.report('ended');
   }
-})
+});
