@@ -1,9 +1,3 @@
-function logEvent(name) {
-  return function(e) {
-    console.log(name, e);
-  };
-}
-
 function formatTime(time) {
   var mins = Math.floor(time / 60),
       secs = Math.floor(time % 60);
@@ -15,7 +9,7 @@ var events = ("abort canplay canplaythrough durationchange emptied ended error l
              "loadedmetadata loadstart mozaudioavailable pause play playing progress " +
              "ratechange seeked seeking suspend timeupdate volumechange waiting").w();
 
-var attrs = {
+App.VideoView = Ember.View.extend({
   tagName: 'video',
   templateName: 'video',
 
@@ -87,6 +81,12 @@ var attrs = {
   loadeddata: Ember.K,
   canplay: Ember.K,
   canplaythrough: Ember.K,
+  abort: Ember.K,
+  emptied: Ember.K,
+  ended: Ember.K,
+  error: Ember.K,
+  mozaudioavailable: Ember.K,
+  ratechange: Ember.K,
 
   loadedmetadata: function(e) {
     this.set('currentTime', e.target.currentTime);
@@ -96,13 +96,13 @@ var attrs = {
   playing: function(e) {
     this.set('isPlaying', true);
     this.report('playing');
-    console.log('isPlaying', this.get('formattedCurrentTime'), this.get('formattedDuration'));
+    // console.log('isPlaying', this.get('formattedCurrentTime'), this.get('formattedDuration'));
   },
 
   pause: function(e) {
     this.set('isPlaying', false);
     this.report('pause');
-    console.log('isPaused', this.get('formattedCurrentTime'), this.get('formattedDuration'));
+    // console.log('isPaused', this.get('formattedCurrentTime'), this.get('formattedDuration'));
   },
 
   timeupdate: function(e) {
@@ -137,14 +137,4 @@ var attrs = {
     this.report('seeked');
     // console.log('seeked', this.get('formattedCurrentTime'), this.get('formattedDuration'));
   }
-};
-
-var eventName;
-for (var i = 0, l = events.length; i < l; i++) {
-  eventName = events[i];
-  if (!attrs[eventName]) {
-    attrs[eventName] = logEvent(eventName);
-  }
-}
-
-App.VideoView = Ember.View.extend(attrs);
+})
