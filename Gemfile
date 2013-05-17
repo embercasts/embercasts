@@ -28,6 +28,8 @@ end
 gem 'ember-rails'
 gem 'emblem-rails'
 
+gem 'rdiscount'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'qunit-rails'

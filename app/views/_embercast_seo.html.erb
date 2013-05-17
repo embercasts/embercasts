@@ -1,0 +1,20 @@
+<% for cast in @embercasts %>
+  <video width="1000" height="600" controls>
+    <%= tag :source, src: cast['mp4_url'],  type: 'video/mp4'%>
+    <%= tag :source, src: cast['webm_url'], type: 'video/webm'%>
+  </video>
+
+  <h1><%= cast['title'] %></h1>
+  <%= RDiscount.new(cast['description']).to_html.html_safe %>
+
+  <p><%= link_to 'Browse Source Code', cast['source_url'] %></p>
+  <p>Published on <%= time_tag DateTime.parse cast['date'] %></p>
+  <p>Duration: <%= cast['time'] %></p>
+
+  <h2>Keywords</h2>
+  <ul>
+    <% for keyword in cast['keywords'] %>
+      <li><strong><%= keyword %></strong></li>
+    <% end %>
+  </ul>
+<% end %>
