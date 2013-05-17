@@ -16,8 +16,6 @@
 
 App.VideoView
 
-p = controller.constructor
-
 .details
   ul.dotted-list
     li = time
