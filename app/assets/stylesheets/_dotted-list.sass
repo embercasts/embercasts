@@ -17,6 +17,10 @@ ul.dotted-list
     &:last-of-type:after
       content: "\1"
 
+    &.nodot
+      &:after
+        content: ""
+
     span
       text-transform: uppercase
       color: $light-gray
