@@ -62,14 +62,14 @@ App.VideoView = Ember.View.extend({
 
   analyticsData: function() {
     var data = this.getProperties('currentTime', 'duration', 'volume');
-    data.videoId = this.get('context.id');
+    data.videoId = this.get('context.slug');
     return data;
   },
 
   report: function(eventName) {
     var analyticsController = this.get('controller.analyticsController');
     if (!analyticsController) { throw new Error('analyticsController not found!'); }
-    analyticsController.report(eventName, this.analyticsData());
+    analyticsController.report('Videos', eventName, this.analyticsData());
   },
 
   // events
