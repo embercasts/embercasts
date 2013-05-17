@@ -5,7 +5,7 @@
   youtube_id: FtcsS8GvRPQ
   description: In this Embercast we cover getting started with [Ember Model](https://github.com/ebryn/ember-model)
     and the Ember starter kit.
-  title: Getting started with Ember Model
+  title: Getting Started with Ember Model
   source_url: https://github.com/embercasts/getting-started-with-ember-model
   date: 12 MAY 13
   keywords:
@@ -21,7 +21,7 @@
     language that compiles to the same format as Handlebars templates, and is therefore
     fully compatible with Ember.js. This Embercast goes over the basics of Emblem
     syntax and how to start writing Emblem.js templates for your Ember apps.'
-  title: Getting started with Emblem.js
+  title: Getting Started with Emblem.js
   source_url: https://github.com/embercasts/emblem
   date: 12 MAY 13
   keywords:
@@ -35,7 +35,7 @@
   youtube_id: Bkwh1bNwuQ8
   description: In the first part of this series, we show how easy it is to build the
     foundations of an autocomplete widget with Ember.js.
-  title: Building an autocomplete widget - part one
+  title: Building an Autocomplete Widget Part 1
   source_url: https://github.com/embercasts/building-an-autocomplete-widget
   date: 12 MAY 13
   keywords:
@@ -54,7 +54,7 @@
     Part 2 will demonstrate how to use this token to perform queries in conjunction
     with Ember Model, as well as how to hack into the Ember Router to make it possible
     to recall and retry previously attempted transitions.'
-  title: Client-side Authentication, Part One
+  title: Client-side Authentication Part 1
   source_url: https://github.com/embercasts/authentication-part-1
   date: 12 MAY 13
   keywords:
