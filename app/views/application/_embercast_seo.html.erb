@@ -5,10 +5,10 @@
   </video>
 
   <h1><%= link_to cast.title, embercast_path(cast.slug) %></h1>
-  <%= RDiscount.new(cast.description).to_html.html_safe %>
+  <%= cast.description_html %>
 
   <p><%= link_to 'Browse Source Code', cast.source_url %></p>
-  <p>Published on <%= time_tag DateTime.parse cast.date %></p>
+  <p>Published on <%= time_tag cast.published_at %></p>
   <p>Duration: <%= cast.time %></p>
 
   <h2>Keywords</h2>

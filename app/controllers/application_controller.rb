@@ -3,6 +3,10 @@ class ApplicationController < ActionController::Base
 
   def index
     @embercasts = Embercast.all
-    render :text => "", :layout => "application"
+
+    respond_to do |format|
+      format.html { render :text => "", :layout => "application" }
+      format.rss { render :layout => false }
+    end
   end
 end

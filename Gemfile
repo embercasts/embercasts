@@ -29,6 +29,7 @@ gem 'ember-rails'
 gem 'emblem-rails'
 
 gem 'rdiscount'
+gem 'nokogiri'
 
 group :development, :test do
   gem 'sqlite3'

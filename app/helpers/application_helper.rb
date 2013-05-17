@@ -7,7 +7,7 @@ module ApplicationHelper
 
   def embercast_seo
     content_tag :noscript do
-      render '/embercast_seo'
+      render 'embercast_seo'
     end
   end
 end

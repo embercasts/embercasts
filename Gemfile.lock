@@ -82,6 +82,7 @@ GEM
     mime-types (1.23)
     multi_json (1.7.2)
     newrelic_rpm (3.5.7.59)
+    nokogiri (1.5.9)
     pg (0.15.1)
     polyglot (0.3.3)
     qunit-rails (0.0.3)
@@ -149,6 +150,7 @@ DEPENDENCIES
   ember-rails
   emblem-rails
   newrelic_rpm (~> 3.5.7.57.beta)
+  nokogiri
   pg
   qunit-rails
   rails (= 3.2.13)
