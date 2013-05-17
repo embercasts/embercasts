@@ -1,5 +1,5 @@
 xml.instruct! :xml, :version => "1.0" 
-xml.rss :version => "2.0" do
+xml.rss('xmlns:itunes' => "http://www.itunes.com/dtds/podcast-1.0.dtd", version: "2.0", 'xmlns:atom' => "http://www.w3.org/2005/Atom") do
   xml.channel do
     xml.title "Embercasts"
     xml.description "Two seasoned Ember developers, including one member of the Ember core team, guide you through a variety of techniques for building out JavaScript applications using the ambitious web application framework Ember.js through this weekly-updated series of screencasts."
