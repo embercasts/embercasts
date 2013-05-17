@@ -19,10 +19,10 @@ App.VideoView
 .details
   ul.dotted-list
     li = time
-    li Downloads: 
     li: trackedLink source_url downloadSourceCode target="_blank" | Source Code
-    li: trackedLink mp4_url downloadMP4 | mp4
-    li: trackedLink webm_url downloadWebm | webm
+    li.nodot Downloads:
+    li.nodot: trackedLink mp4_url downloadMP4 | mp4
+    li.nodot: trackedLink webm_url downloadWebm | webm
 
 .description
   p = markdown description

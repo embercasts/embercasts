@@ -17,4 +17,5 @@ nav: .nav-fixed
       a href="https://twitter.com/Embercasts":     img src="/assets/twitter.png" 
       a href="http://www.facebook.com/embercasts": img src="/assets/facebook.png" 
       a href="https://plus.google.com/communities/108264891214880634641": img src="/assets/gplus.png" 
+      a href="itpc://www.embercasts.com/index.rss": img src="/assets/itunes.png"
       a href="/index.rss": img src="/assets/rss.png" 
