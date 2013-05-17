@@ -11,6 +11,7 @@ App.Embercast = Ember.Model.extend({
   date: attr(),
   time: attr(),
   keywords: attr(),
+  slug: attr(),
 
   poster: function() {
     if (this.get('mp4_url')) {
@@ -22,11 +23,11 @@ App.Embercast = Ember.Model.extend({
 });
 
 App.Embercast.adapter = Ember.Adapter.create({
-  find: function(record, id) {
-    var data = EMBERCAST_DATA.embercasts,
-        recordData = data.findProperty('id', id);
+  find: function(record, slug) {
+    var data = EMBERCAST_DATA,
+        recordData = data.findProperty('slug', slug);
 
-    record.load(id, recordData);
+    record.load(slug, recordData);
   },
 
   findAll: function(klass, records) {
