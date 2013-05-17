@@ -5,8 +5,10 @@ App.Router.map(function() {
   this.route('episode', {path: 'episodes/:embercast_id'});
   this.route('about');
   this.route('contact');
+
+  this.route('notFound', {path: '/*path'});
 });
 
 App.Router.reopen({
-  location: 'history' // use pushState
+  location: ('history' in window) ? 'history' : 'hash'
 });

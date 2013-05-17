@@ -1,0 +1,5 @@
+.content-page
+  h1 Bro, I am crying
+
+  p Could not find page "#{content}". If this is a surprise, please
+    <a href="https://github.com/embercasts/embercasts">file a ticket</a>.
