@@ -6,7 +6,7 @@ class Embercast < OpenStruct
   end
 
   def slug
-    "#{id}-#{title.parameterize}"
+    title.parameterize
   end
 
   def as_json(options)
