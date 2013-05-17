@@ -19,9 +19,9 @@ App.VideoView
 .details
   ul.dotted-list
     li = time
-    li: a href=source_url data-ga-event="downloadSourceCode" Source Code
-    li: a href=mp4_url data-ga-event="downloadMP4" MP4
-    li: a href=webm_url data-ga-event="downloadWebm" webm
+    li: trackedLink source_url downloadSourceCode target="_blank" | Source Code
+    li: trackedLink mp4_url downloadMP4 | mp4
+    li: trackedLink webm_url downloadWebm | webm
 
 .description
   p = markdown description
