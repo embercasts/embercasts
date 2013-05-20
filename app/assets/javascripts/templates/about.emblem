@@ -1,19 +1,20 @@
 .content-page
   .row
-    h2 About Embercasts
+    .large-12.columns
+      h2 About Embercasts
   .row.caster-bio
-    .large-3.columns
+    .large-3.small-4.columns
       img src="/assets/ebryn.jpeg"
-    .large-9.columns
+    .large-9.small-8.columns
 
       h2 Erik Bryn (<a href="https://twitter.com/ebryn">@ebryn</a>)
 
       p Erik has been working on Ember.js for almost two years and is a member of the Ember.js core team. He loves helping people learn and build next generation web applications with Ember.js. He is available for <a href="http://erikbryn.com/emberjs-consulting">Ember.js consulting</a>.
 
   .row.caster-bio
-    .large-3.columns
+    .large-3.small-4.columns
       img src="/assets/machty.jpeg"
-    .large-9.columns
+    .large-9.small-8.columns
 
       h2 Alex Matchneer (<a href="https://twitter.com/machty">@machty</a>)
 
@@ -23,7 +24,7 @@
         He is also the creator of <a href="http://www.emblemjs.com">Emblem.js</a>,
         an Ember-compatible, indentation-based templating language.
 
-  .row
+  .large-12.columns
     h2 Special Thanks
     p
       strong Ren Brown
