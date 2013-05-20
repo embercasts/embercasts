@@ -10,5 +10,18 @@ App.Router.map(function() {
 });
 
 App.Router.reopen({
-  location: ('history' in window) ? 'history' : 'hash'
+  location: 'history'
 });
+
+// Fix supports IE9 use of Router.location history
+if (!window.history.pushState) {
+  Ember.LinkView.reopen({
+    click: function() {
+      window.location.replace(this.get('href'));
+    }
+  });
+
+  Ember.HistoryLocation.reopen({
+    replaceState: function() {}
+  });
+}
