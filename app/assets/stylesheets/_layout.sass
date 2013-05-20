@@ -4,14 +4,21 @@ html, body
 
 .page
   +grid-row
-
+  z-index: 1
   header, footer
     clear: both
   header
     @extend .hide-for-medium-up
   nav
     +grid-column(3)
-    @extend .hide-for-small
+    +breakpoint(phone)
+      position: absolute !important
+      left: -110%
+      top: 0
+      +grid-column(11)
+      display: block
+      z-index: 10
+      transition: all 0.25s ease-in-out
   .content
     +grid-row($behavior: nest)
     +grid-column(9)
@@ -20,12 +27,20 @@ html, body
 
   +breakpoint(phone)
     .content
+      transition: all 0.25s ease-in-out
       +grid-row
       +grid-column(12)
       article
         +grid-column(12, $collapse: true)
 
-
++breakpoint(phone)
+  .phone-show-nav .content
+    position: absolute
+    left: 90%
+    z-index: 2
+    display: block
+  .phone-show-nav nav
+    left: 0
 
 article
   margin: emCalc(42px) 0 1em
