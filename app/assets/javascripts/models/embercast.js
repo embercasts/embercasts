@@ -12,6 +12,7 @@ App.Embercast = Ember.Model.extend({
   time: attr(),
   keywords: attr(),
   slug: attr(),
+  ember_version: attr(),
 
   poster: function() {
     if (this.get('mp4_url')) {

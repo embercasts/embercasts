@@ -19,6 +19,7 @@ App.VideoView
 .details
   ul.dotted-list
     li = time
+    li Ember #{ember_version}
     li: trackedLink source_url downloadSourceCode target="_blank" | Source Code
     li.nodot Downloads:
     li.nodot: trackedLink mp4_url downloadMP4 | mp4

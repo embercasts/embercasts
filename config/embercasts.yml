@@ -14,6 +14,7 @@
   - beginner
   - models
   time: '5:08'
+  ember_version: 1.0.0-RC.3
 - id: 2
   mp4_url: http://video1.embercasts.com/emblem-final-high.mp4
   mp4_size: 6849859
@@ -31,6 +32,7 @@
   - emblem.js
   - beginner
   time: '3:32'
+  ember_version: 1.0.0-RC.3
 - id: 3
   mp4_url: http://video1.embercasts.com/autocomplete-draft-high.mp4
   mp4_size: 8057624
@@ -45,6 +47,7 @@
   - autocomplete
   - beginner
   time: '5:20'
+  ember_version: 1.0.0-RC.3
 - id: 4
   mp4_url: http://video1.embercasts.com/authentication-part1-high.mp4
   mp4_size: 14962046
@@ -66,3 +69,4 @@
   - router
   - intermediate
   time: '7:54'
+  ember_version: 1.0.0-RC.3
