@@ -62,9 +62,9 @@
   - intermediate
   time: '7:54'
 - id: 5
-  mp4_url: http://video1.embercasts.com/embercast-auth-2-final.mp4
+  mp4_url: http://video1.embercasts.com/authentication-part2-high.mp4
   mp4_size: 14962046
-  webm_url: http://video1.embercasts.com/embercast-auth2-final.webmhd.webm
+  webm_url: http://video1.embercasts.com/authentication-part2-high.webm
   description: ! 'This two-part series on client-side authentication focuses on how you
     can configure your single-page Ember app to query data from the server
     using token-based authentication. This second part focuses mainly 
