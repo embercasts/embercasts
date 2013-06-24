@@ -52,12 +52,7 @@
   description: ! 'This two-part series on client-side authentication focuses on how
     you can configure your single-page Ember app to query data from the server using
     token-based authentication. This first part focuses on basic app setup/organization,
-    and how to build a username / password form to retrieve the token from the server.
-
-
-    Part 2 will demonstrate how to use this token to perform queries in conjunction
-    with Ember Model, as well as how to hack into the Ember Router to make it possible
-    to recall and retry previously attempted transitions.'
+    and how to build a username / password form to retrieve the token from the server.'
   title: Client-side Authentication Part 1
   source_url: https://github.com/embercasts/authentication-part-1
   date: 12 MAY 13
@@ -66,3 +61,23 @@
   - router
   - intermediate
   time: '7:54'
+- id: 5
+  mp4_url: http://video1.embercasts.com/embercast-auth-2-final.mp4
+  mp4_size: 14962046
+  webm_url: http://video1.embercasts.com/embercast-auth2-final.webmhd.webm
+  description: ! 'This two-part series on client-side authentication focuses on how you
+    can configure your single-page Ember app to query data from the server
+    using token-based authentication. This second part focuses mainly 
+    on how to make use of redirects, saved/retryable transitions, and
+    async error handling features available on the Ember Router to 
+    build out the rest of a simple authenticated app.'
+  title: Client-side Authentication Part 2
+  source_url: https://github.com/embercasts/authentication-part-2
+  date: 23 JUN 13
+  keywords:
+  - authentication
+  - router
+  - promises
+  - intermediate
+  time: '7:35'
+
