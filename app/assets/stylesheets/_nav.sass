@@ -10,6 +10,8 @@ nav
       background-repeat: no-repeat
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAAAXCAYAAADdlHeDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABMdJREFUeNrsWy1s20AUdqOwkhSXNNLAQIjBWEiDQxq8kPCQBLskuCHhJin2QIMbUjZgUjAwySXDDRnu3rPeRS9v7+w7J9Wq6Z50cu279+7u3XfvL+rZ29tbFCiQL7WCCgI1ofZHXtzPwecJPFbsU/Hp8UcvHFuwOIGCxQn0kell/oVb7/Tq7vs0WJxALnQdXFWgJjQIwAnk66ZieHTeNcahTAbN2oh9zqFlkNEslfHP8Oga3wljpvBtBn8v2LDE8EIfyp4I+Snx5o7ZFsqfM2Vk0JY2fhiP67sRPEi4pkfg2zruK6Z9GbM/he8pOyAzz0KIwzFbiCsyS+yBfDPRlUD7BjyFwtMhHcr94DwZ8GxpnKZrpAnNWxKMP/eVfWYKgKTcNbS44sx20Ib8gISCsf+VvUtFRIpSOfWFbJmOV8mPaG1bBWSLGiyWwKgADh7eGNqTbb2gcJd5UPFjdqirir3s92QOi1mPTY0FKedxXNMeOD6yW6SkjgNoIhK4ofG2fpsi5g6bWDvMX6Xoe742At7CwYhNCGA26pJCJRUeoEGK6UZHdKu7Djz3jMfo6KRup4nsFttELFwT3iZE4iW5An54kwqZnDcRfNxqyf7ygMgdVN5aaD3iHyvAmrDLIA8TXeY5491xYFdciEhRaA5ydnSoc9GHFqJPN7nP9DeGb2bOWzZ/JsYX2p7IInQFcDlfQnPfkiVZUl8qLSx+N62J7DazBpzGoJRy8agcfAelDpjyRhQf2Mx+TrxLuvV8QXfGnVD/SIA2JvBphJXjPVjg7wz4b4QPj9ll6Ih1LQXvFQNXhzKPrAI8BzGNZR7U11cDEHjmBNKxcA8FXUrpNnI4xFSAvmsBr5FvnnnFuUQO1txZdptuuGR6hu9ek3jQrubdl3ILcGLFHU18lSesVaq5H/H+yKzKqXTUZXs9+A4g+4WXkYLv/Eg9OstuNwTBsYo5JdmUfHHifdn6LmoOoC5VvibwjepiTAQkjE+ENdq7ZOhDK4buKfXduK9s7SeHHdysy/+wnJFo5YR/WFvpUlZ17XnAS+B9ofQ9Vi7NCmXDuKQBeJxlY3D8Is21Q4D6kahjufFFjUs5Fb36zkMB9YMADYI6oWB0WnPAmBL3KUZKFCs3E5mYD3icZLcoCJZKHlkKaSOq93wkGlmAIzc80NaOmZRD7OMTGwwcDk0mDOgCEDRLz0PeUebUV9Zx1EWpk91iVcEDVIEyFwIwG8rzH2rS1vekLq+3wN8rRUEZe8q0dk2VawMYlIUB4KqmjlNZPBTxT1nrovS2THOh4ftvqvdEVQE2VXQXFdZqTbIW5O60VFoCWrW+vHrsK5tXjp88ULqvtIoK618pq0P/Rpjsfb9SOa6jjKfrlOqvPfh7pgxRt26hcNcCYFkJJj0vPNaFWc0Q5nHdTzmera+Kr7R2vrJbYkNbF8YjagXH0ram7yA2wFqNUiSsqtEUDc36UilmqgE6/XyQKlYgEvFO3jCjzaUe6Dcym7yZsY4+sltMyZhNDUnRqWUzWBgcNlXwCehOAXhBGdOQipWRAh4T6BWKIvD7pc2aeIKnr1yqHc3RMzEM1Xm0sbivMWVEqSVwNXvZKrwIzL72wyjpTZtvijUaX9ln4b8cAjWhPwIMAHW2n23CDFYvAAAAAElFTkSuQmCC)
       margin-bottom: emCalc(50px)
+      +retina
+        +background-image-retina('ember-site-logo', 'png', 142px, 23px)
 
   .nav-fixed
     position: fixed
@@ -49,13 +51,36 @@ nav
       text-transform: lowercase
 
     #footer-links
-      margin-top: 10px
+      margin-top: 5px
       a
-        float: none
-        padding-bottom: 0
-        margin-right: 5px
-      img
-        width: 34px
+        float: left
+        clear: none
+        margin: 0 5px 2px 0
+        padding: 18px
+        background: url('/assets/social-icons-embercasts.png') no-repeat
+        &.twitter
+          background-position: 0 0
+        &.facebook
+          background-position: -36px 0
+        &.gplus
+          background-position: -72px 0
+        &.itunes
+          background-position: -108px 0
+        &.rss
+          background-position: -144px 0
+        +retina
+          +background-image-retina ('/assets/social-icons-embercasts', 'png', 179px, 34px)
+          &.twitter
+            background-position: 0 0
+          &.facebook
+            background-position: -36px 0
+          &.gplus
+            background-position: -72px 0
+          &.itunes
+            background-position: -108px 0
+          &.rss
+            background-position: -144px 0
+
 
 #mailing-list-form
   margin-bottom: 20px

@@ -14,8 +14,8 @@ nav: .nav-fixed
     iframe allowtransparency="true" frameborder="0" scrolling="no" src="//platform.twitter.com/widgets/follow_button.html?screen_name=embercasts&show_count=false" style="width:300px; height:20px;"
 
     #footer-links
-      a href="https://twitter.com/Embercasts":     img src="/assets/twitter.png" 
-      a href="http://www.facebook.com/embercasts": img src="/assets/facebook.png" 
-      a href="https://plus.google.com/communities/108264891214880634641": img src="/assets/gplus.png" 
-      a href="itpc://www.embercasts.com/index.rss": img src="/assets/itunes.png"
-      a href="/index.rss": img src="/assets/rss.png" 
+      a.twitter href="https://twitter.com/Embercasts"
+      a.facebook href="http://www.facebook.com/embercasts"
+      a.gplus href="https://plus.google.com/communities/108264891214880634641"
+      a.itunes href="itpc://www.embercasts.com/index.rss"
+      a.rss href="/index.rss"
