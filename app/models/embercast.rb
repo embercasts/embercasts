@@ -2,7 +2,7 @@ class Embercast < OpenStruct
   def self.all
     @embercasts = YAML.load_file(Rails.root.join('config', 'embercasts.yml')).map do |data|
       Embercast.new data
-    end
+    end.reverse
   end
 
   def slug
