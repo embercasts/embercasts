@@ -36,6 +36,8 @@ nav
     line-height: 1.2
     a
       color: $light-orange
+      &.active
+        color: $primary-color
 
   #footer-nav
     bottom: 75px
@@ -47,6 +49,9 @@ nav
       padding-bottom: 5px
       font-size: 15px
       text-transform: lowercase
+      &.active
+        color: darken($primary-color, 15%)
+
 
     #footer-links
       margin-top: 10px
