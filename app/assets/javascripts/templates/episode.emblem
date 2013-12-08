@@ -26,3 +26,5 @@ App.VideoView
 
 .description
   p = markdown description
+
+#disqus_thread
